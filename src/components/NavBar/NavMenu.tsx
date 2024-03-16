@@ -15,6 +15,7 @@ import {
   MenuDivider,
   MenuItem,
   MenuList,
+  Link as ChakraLink,
 } from "@chakra-ui/react";
 import { Link } from "react-router-dom";
 
@@ -64,14 +65,15 @@ const NavMenu = () => {
           </MenuItem>
         </Link>
         <MenuDivider />
-        <MenuItem
-          color={"green"}
-          icon={<IoIosCall fontSize="20px" color="green" />}
-          fontSize="lg"
-          fontWeight="bold"
-        >
-          Contact Us
-        </MenuItem>
+        <ChakraLink href="tel:7192009298">
+          <MenuItem
+            color={"green"}
+            icon={<IoIosCall fontSize="20px" color="green" />}
+            fontSize="md"
+          >
+            (719) 200-9298
+          </MenuItem>
+        </ChakraLink>
       </MenuList>
     </Menu>
   );

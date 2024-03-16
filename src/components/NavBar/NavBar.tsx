@@ -1,15 +1,16 @@
-import { Button, HStack } from "@chakra-ui/react";
-import NavBarLogo from "./NavBarLogo";
 import { Link } from "react-router-dom";
+import { Button, HStack, Link as ChakraLink } from "@chakra-ui/react";
+import { IoIosCall } from "react-icons/io";
+import NavBarLogo from "./NavBarLogo";
 import { componentColorScheme } from "../../theme";
 
 const NavBar = () => {
-  const navLinkFontSizes = ["12px", "12px", "16px", "18px"];
+  const navLinkFontSizes = ["12px", "12px", "14px", "16px"];
 
   return (
     <>
       <NavBarLogo logoSize="100px" />
-      <HStack spacing={["20px", "20px", "20px", "40px"]}>
+      <HStack spacing={["16px", "16px", "16px", "35px"]}>
         <Link to={"/"}>
           <Button
             colorScheme="default"
@@ -64,15 +65,16 @@ const NavBar = () => {
             Glossary
           </Button>
         </Link>
-        <Link to={"/contact"}>
+        <ChakraLink href="tel:7192009298">
           <Button
+            leftIcon={<IoIosCall fontSize="20px" />}
             colorScheme={componentColorScheme}
-            size={["sm", "md", "md", "lg"]}
+            size={["sm", "sm", "sm", "md"]}
             variant="solid"
           >
-            Contact Us
+            (719) 200-9298
           </Button>
-        </Link>
+        </ChakraLink>
       </HStack>
     </>
   );
