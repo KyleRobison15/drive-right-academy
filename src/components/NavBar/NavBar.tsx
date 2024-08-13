@@ -1,80 +1,58 @@
-import { Link } from "react-router-dom";
-import { Button, HStack, Link as ChakraLink } from "@chakra-ui/react";
-import { IoIosCall } from "react-icons/io";
+import { Link, useLocation } from "react-router-dom";
+import { Button, HStack } from "@chakra-ui/react";
 import NavBarLogo from "./NavBarLogo";
-import { componentColorScheme } from "../../theme";
+import ContactButton from "../ContactButton";
 
 const NavBar = () => {
-  const navLinkFontSizes = ["12px", "12px", "14px", "16px"];
+  const navLinkFontSizes = ["12px", "16px"];
+  const location = useLocation();
+
+  const getButtonVariant = (path: string) => {
+    if (location.pathname === path) {
+      return "solid";
+    }
+
+    return "ghost";
+  };
 
   return (
     <>
-      <NavBarLogo logoSize="100px" />
-      <HStack spacing={["16px", "16px", "16px", "35px"]}>
+      <HStack>
+        <NavBarLogo />
+      </HStack>
+      <HStack justify="space-evenly" flex="1">
         <Link to={"/"}>
-          <Button
-            colorScheme="default"
-            fontSize={navLinkFontSizes}
-            variant="link"
-          >
+          <Button fontSize={navLinkFontSizes} variant={getButtonVariant("/")}>
             Home
           </Button>
         </Link>
         <Link to={"/programs"}>
           <Button
-            colorScheme="default"
             fontSize={navLinkFontSizes}
-            variant="link"
+            variant={getButtonVariant("/programs")}
           >
             Programs
           </Button>
         </Link>
         <Link to={"/schedule"}>
           <Button
-            colorScheme="default"
             fontSize={navLinkFontSizes}
-            variant="link"
+            variant={getButtonVariant("/schedule")}
           >
             Schedule
           </Button>
         </Link>
         <Link to={"/about"}>
           <Button
-            colorScheme="default"
             fontSize={navLinkFontSizes}
-            variant="link"
+            variant={getButtonVariant("/about")}
           >
             About
           </Button>
         </Link>
-        <Link to={"/frequently-asked-questions"}>
-          <Button
-            colorScheme="default"
-            fontSize={navLinkFontSizes}
-            variant="link"
-          >
-            FAQs
-          </Button>
-        </Link>
-        <Link to={"/glossary"}>
-          <Button
-            colorScheme="default"
-            fontSize={navLinkFontSizes}
-            variant="link"
-          >
-            Glossary
-          </Button>
-        </Link>
-        <ChakraLink href="tel:7192009298">
-          <Button
-            leftIcon={<IoIosCall fontSize="20px" />}
-            colorScheme={componentColorScheme}
-            size={["sm", "sm", "sm", "md"]}
-            variant="solid"
-          >
-            (719) 200-9298
-          </Button>
-        </ChakraLink>
+      </HStack>
+      <HStack>
+        <ContactButton />
       </HStack>
     </>
   );

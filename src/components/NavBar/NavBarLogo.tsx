@@ -1,21 +1,24 @@
 import { Image, useColorMode } from "@chakra-ui/react";
 import logoDark from "../../assets/drive_right_dark.png";
-import logoLight from "../../assets/drive_right_light.png";
+import logoLight from "../../assets/logoTransparentBkgd.png";
+import { Link } from "react-router-dom";
 
-interface Props {
-  logoSize: string;
-}
-
-const NavBarLogo = ({ logoSize }: Props) => {
+const NavBarLogo = () => {
   const { colorMode } = useColorMode();
+  const logoWidths = ["120px", "150px"];
+  const logoHeights = ["55px", "60px"];
 
   return (
-    <Image
-      src={colorMode === "light" ? logoLight : logoDark}
-      boxSize={logoSize}
-      cursor="pointer"
-      borderRadius="5px"
-    />
+    <Link to="/">
+      <Image
+        src={colorMode === "light" ? logoLight : logoDark}
+        h={logoHeights}
+        w={logoWidths}
+        cursor="pointer"
+        borderRadius="5px"
+        aria-label="Drive Right Academy Logo"
+      />
+    </Link>
   );
 };
 

@@ -4,8 +4,6 @@ import {
   IoHomeOutline,
   IoReaderOutline,
   IoCalendarOutline,
-  IoHelpCircleOutline,
-  IoSchoolOutline,
   IoPeopleOutline,
 } from "react-icons/io5";
 import {
@@ -18,17 +16,19 @@ import {
   Link as ChakraLink,
 } from "@chakra-ui/react";
 import { Link } from "react-router-dom";
+import { componentColorScheme } from "../../theme";
 
 const NavMenu = () => {
   return (
     <Menu>
       <MenuButton
         as={IconButton}
-        aria-label="Options"
-        icon={<HamburgerIcon h="32px" w="32px" color="gray" />}
+        aria-label="Options Menu"
+        icon={<HamburgerIcon h="24px" w="24px" color="teal" />}
         variant="outline"
-        boxSize="50px"
-        borderWidth="3px"
+        boxSize="42px"
+        borderWidth="2px"
+        colorScheme={componentColorScheme}
       />
       <MenuList>
         <Link to="/">
@@ -46,30 +46,19 @@ const NavMenu = () => {
             Schedule
           </MenuItem>
         </Link>
-        <Link to="/programs">
+        <Link to="/about">
           <MenuItem icon={<IoPeopleOutline fontSize="18px" />} fontSize="md">
             About
-          </MenuItem>
-        </Link>
-        <Link to="/programs">
-          <MenuItem
-            icon={<IoHelpCircleOutline fontSize="18px" />}
-            fontSize="md"
-          >
-            FAQs
-          </MenuItem>
-        </Link>
-        <Link to="/programs">
-          <MenuItem icon={<IoSchoolOutline fontSize="18px" />} fontSize="md">
-            Glossary
           </MenuItem>
         </Link>
         <MenuDivider />
         <ChakraLink href="tel:7192009298">
           <MenuItem
-            color={"green"}
-            icon={<IoIosCall fontSize="20px" color="green" />}
+            color={"teal"}
+            icon={<IoIosCall fontSize="22px" color="teal" />}
             fontSize="md"
+            fontWeight="bold"
+            aria-label="Call Us"
           >
             (719) 200-9298
           </MenuItem>

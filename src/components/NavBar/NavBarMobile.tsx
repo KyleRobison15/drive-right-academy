@@ -4,7 +4,7 @@ import NavBarLogo from "./NavBarLogo";
 const NavBarMobile = () => {
   return (
     <>
-      <NavBarLogo logoSize="100px" />
+      <NavBarLogo />
       <NavMenu />
     </>
   );
