@@ -1,10 +1,4 @@
-import {
-  Button,
-  ButtonGroup,
-  Link as ChakraLink,
-  Icon,
-  IconButton,
-} from "@chakra-ui/react";
+import { Button, Link as ChakraLink } from "@chakra-ui/react";
 import { IoIosCall } from "react-icons/io";
 import { componentColorScheme } from "../theme";
 
