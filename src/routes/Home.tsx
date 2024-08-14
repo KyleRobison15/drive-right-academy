@@ -53,12 +53,7 @@ const Home = () => {
             </Button>
           </ChakraLink>
         </Box>
-        <Box
-          boxSize="350px"
-          minW="350px"
-          borderColor="black"
-          borderWidth="1px"
-        ></Box>
+        <Box boxSize="350px" minW="350px" bg="teal.100"></Box>
       </Stack>
       <Divider />
       <Stack p="24px" mt="36px" spacing={8} align="center">
