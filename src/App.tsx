@@ -4,10 +4,10 @@ import NavBarMobile from "./components/NavBar/NavBarMobile";
 import NavBar from "./components/NavBar/NavBar";
 
 const App = () => {
-  const mainContainerMx = ["0px", "0px", "75px", "150px"];
+  const mainContainerMx = ["0px", "24px", "75px", "150px"];
 
   return (
-    <Flex id="app-container" m="0" p="0" flexDir="column" h="100vh">
+    <Flex id="app-container" m="0" p="0" flexDir="column" minH="100vh">
       <HStack
         as="nav"
         id="navbar"
@@ -19,6 +19,7 @@ const App = () => {
         pos="fixed"
         top="0"
         zIndex="2000"
+        bg="white"
       >
         <Show below="md">
           <NavBarMobile />
@@ -31,9 +32,9 @@ const App = () => {
         as="main"
         id="main-container"
         flexGrow="1"
-        mt="100px"
+        mt="75px"
+        mb="32px"
         mx={mainContainerMx}
-        justifyContent="center"
       >
         <Outlet />
       </Flex>

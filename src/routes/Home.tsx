@@ -1,7 +1,98 @@
-import { Box } from "@chakra-ui/react";
+import {
+  Box,
+  Button,
+  Flex,
+  Stack,
+  Heading,
+  Highlight,
+  Link as ChakraLink,
+  Text,
+  Divider,
+} from "@chakra-ui/react";
+import { componentColorScheme } from "../theme";
+import Feature from "../components/Feature";
 
 const Home = () => {
-  return <Box></Box>;
+  return (
+    <Flex flexDir="column" flexGrow={1}>
+      <Stack
+        direction={["column", "column", "row", "row"]}
+        minH="400px"
+        p="24px"
+        mb="24px"
+        justify="space-evenly"
+        align="center"
+        textAlign={["center", "center", "left", "left"]}
+      >
+        <Box maxW="32rem">
+          <Text fontSize="xl" fontWeight="bold" color="teal.800" mb={4}>
+            More than just the basics.
+          </Text>
+          <Heading mb={4}>
+            <Highlight
+              query={"Drive Right!"}
+              styles={{
+                color: "teal.700",
+              }}
+            >
+              Learn how to Drive Right!
+            </Highlight>
+          </Heading>
+          <Text fontSize="lg">
+            Start your journey to becoming a confident, legal and safe driver
+            today.
+          </Text>
+          <ChakraLink href="tel:7192009298">
+            <Button
+              size="lg"
+              colorScheme={componentColorScheme}
+              mt="24px"
+              mb="24px"
+            >
+              Call Now to Enroll
+            </Button>
+          </ChakraLink>
+        </Box>
+        <Box
+          boxSize="350px"
+          minW="350px"
+          borderColor="black"
+          borderWidth="1px"
+        ></Box>
+      </Stack>
+      <Divider />
+      <Stack p="24px" mt="36px" spacing={8} align="center">
+        <Feature
+          title={"The Right Approach"}
+          desc={
+            "Our classroom portion provides an interactive, upbeat approach, and we take the time to go beyond the basics to ensure that your teen gains an appreciation for safe, responsible driving."
+          }
+          justifyImage="left"
+        />
+        <Feature
+          title={"Experienced and Locally Owned"}
+          desc={
+            "Drive-Right Academy is locally and family owned and has been teaching teens and adults the skills necessary to become successful and legal drivers for over 20 years! We take pride in serving our community by utilizing our many years of experience to deliver the finest drivers education in Colorado Springs."
+          }
+          justifyImage="right"
+        />
+        <Feature
+          title={"Online Drivers Education"}
+          desc={
+            "We also offer an online Drivers Education option for those who are interested. More details about the online drivers education program to come."
+          }
+          justifyImage="left"
+        />
+        <Feature
+          title={"Cost Friendly Option"}
+          desc={
+            "At Drive-Right Academy, we believe learning the skills to become a confident, legal and safe driver shouldn't break the bank. We offer our Drivers Education services at a much lower cost than other competitors in the area."
+          }
+          justifyImage="right"
+        />
+      </Stack>
+    </Flex>
+  );
 };
 
 export default Home;
