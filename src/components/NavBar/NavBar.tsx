@@ -4,7 +4,7 @@ import NavBarLogo from "./NavBarLogo";
 import ContactButton from "../ContactButton";
 
 const NavBar = () => {
-  const navLinkFontSizes = ["12px", "16px"];
+  const navLinkFontSizes = ["12px", "14px", "14px", "14px", "16px"];
   const location = useLocation();
 
   const getButtonVariant = (path: string) => {
@@ -48,6 +48,14 @@ const NavBar = () => {
             variant={getButtonVariant("/about")}
           >
             About
+          </Button>
+        </Link>
+        <Link to={"/contact"}>
+          <Button
+            fontSize={navLinkFontSizes}
+            variant={getButtonVariant("/contact")}
+          >
+            Contact
           </Button>
         </Link>
       </HStack>

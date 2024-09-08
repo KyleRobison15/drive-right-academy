@@ -1,4 +1,5 @@
 import { Box, Heading, Stack, Text } from "@chakra-ui/react";
+import { componentColorScheme } from "../theme";
 
 interface Props {
   title: string;
@@ -25,7 +26,7 @@ const Feature = ({ title, desc, justifyImage }: Props) => {
         order={[2, 2, imageOrder, imageOrder]}
         minW="300px"
         boxSize="300px"
-        bg="teal.100"
+        bg={`${componentColorScheme}.50`}
       ></Box>
     </Stack>
   );

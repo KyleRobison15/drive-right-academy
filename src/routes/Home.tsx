@@ -8,9 +8,14 @@ import {
   Link as ChakraLink,
   Text,
   Divider,
+  AbsoluteCenter,
+  Circle,
+  Icon,
+  Square,
 } from "@chakra-ui/react";
 import { componentColorScheme } from "../theme";
 import Feature from "../components/Feature";
+import { PhoneIcon } from "@chakra-ui/icons";
 
 const Home = () => {
   return (
@@ -19,28 +24,32 @@ const Home = () => {
         direction={["column", "column", "row", "row"]}
         minH="400px"
         p="24px"
-        mb="24px"
         justify="space-evenly"
         align="center"
         textAlign={["center", "center", "left", "left"]}
       >
         <Box maxW="32rem">
-          <Text fontSize="xl" fontWeight="bold" color="teal.800" mb={4}>
+          <Text
+            fontSize="xl"
+            fontWeight="bold"
+            color={`${componentColorScheme}.500`}
+            mb={4}
+          >
             More than just the basics.
           </Text>
           <Heading mb={4}>
             <Highlight
               query={"Drive Right!"}
               styles={{
-                color: "teal.700",
+                color: `${componentColorScheme}.500`,
               }}
             >
               Learn how to Drive Right!
             </Highlight>
           </Heading>
           <Text fontSize="lg">
-            Start your journey to becoming a confident, legal and safe driver
-            today.
+            Start your journey to becoming a confident, legal and responsible
+            driver today.
           </Text>
           <ChakraLink href="tel:7192009298">
             <Button
@@ -48,19 +57,27 @@ const Home = () => {
               colorScheme={componentColorScheme}
               mt="24px"
               mb="24px"
+              rightIcon={<PhoneIcon boxSize="14px" ml="4px" />}
             >
               Call Now to Enroll
             </Button>
           </ChakraLink>
         </Box>
-        <Box boxSize="350px" minW="350px" bg="teal.100"></Box>
+        <Box
+          boxSize="350px"
+          minW="350px"
+          bg={`${componentColorScheme}.50`}
+        ></Box>
       </Stack>
-      <Divider />
-      <Stack p="24px" mt="36px" spacing={8} align="center">
+      <Divider my="24px" />
+      <Heading fontSize="2xl" textAlign="center" my="12px">
+        Why Choose Drive-Right?
+      </Heading>
+      <Stack p="24px" spacing={8} align="center">
         <Feature
           title={"The Right Approach"}
           desc={
-            "Our classroom portion provides an interactive, upbeat approach, and we take the time to go beyond the basics to ensure that your teen gains an appreciation for safe, responsible driving."
+            "Our classroom portion and top-notch road sessions provide an interactive, upbeat approach. We take the time to go beyond the basics to ensure that your teen gains an appreciation for responsible driving."
           }
           justifyImage="left"
         />

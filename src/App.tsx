@@ -21,10 +21,10 @@ const App = () => {
         zIndex="2000"
         bg="white"
       >
-        <Show below="md">
+        <Show below="lg">
           <NavBarMobile />
         </Show>
-        <Hide below="md">
+        <Hide below="lg">
           <NavBar />
         </Hide>
       </HStack>

@@ -24,11 +24,11 @@ const NavMenu = () => {
       <MenuButton
         as={IconButton}
         aria-label="Options Menu"
-        icon={<HamburgerIcon h="24px" w="24px" color="teal" />}
+        icon={<HamburgerIcon h="24px" w="24px" color="gray" />}
         variant="outline"
         boxSize="42px"
         borderWidth="2px"
-        colorScheme={componentColorScheme}
+        colorScheme="gray"
       />
       <MenuList>
         <Link to="/">
@@ -54,8 +54,13 @@ const NavMenu = () => {
         <MenuDivider />
         <ChakraLink href="tel:7192009298">
           <MenuItem
-            color={"teal"}
-            icon={<IoIosCall fontSize="22px" color="teal" />}
+            color={`${componentColorScheme}.500`}
+            icon={
+              <IoIosCall
+                fontSize="22px"
+                color={`${componentColorScheme}.500`}
+              />
+            }
             fontSize="md"
             fontWeight="bold"
             aria-label="Call Us"
