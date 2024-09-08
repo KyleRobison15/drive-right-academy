@@ -8,7 +8,6 @@ import {
   List,
   ListIcon,
   ListItem,
-  Text,
 } from "@chakra-ui/react";
 import EnrollNowButton from "./EnrollNowButton";
 import { Cohort } from "../hooks/useCohorts";
@@ -33,8 +32,8 @@ const CohortCard = ({ cohort }: Props) => {
       </CardHeader>
       <CardBody>
         <List spacing={2}>
-          {classDates.map((classDate) => (
-            <ListItem key={cohortId}>
+          {classDates.map((classDate, index) => (
+            <ListItem key={`${cohortId}-${index}`}>
               <ListIcon
                 as={FaCaretRight}
                 color={`${componentColorScheme}.500`}

@@ -74,11 +74,12 @@ const Contact = () => {
       </Flex>
       <Flex justify="center">
         <Box
-          p="24px"
+          p="28px"
           boxShadow="lg"
           borderWidth="1px"
           borderRadius="5px"
-          minW={["325px", "325px", "400px"]}
+          minW={["340px", "425px", "450px"]}
+          bg="gray.50"
         >
           <ContactForm />
         </Box>

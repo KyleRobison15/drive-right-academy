@@ -1,9 +1,10 @@
-import { Button, Heading, VStack, Text } from "@chakra-ui/react";
+import { Button, Heading, VStack, Text, useToast } from "@chakra-ui/react";
 import { z } from "zod";
 import useZodForm from "../hooks/useZodForm";
 import FormInput, { FormTextArea } from "./FormInput";
 import { componentColorScheme } from "../theme";
 import { RiMailSendLine } from "react-icons/ri";
+import emailjs from "@emailjs/browser";
 
 const registerFormSchema = z.object({
   name: z.string().min(1, { message: "Name is required." }),
@@ -12,15 +13,12 @@ const registerFormSchema = z.object({
     .min(1, { message: "Email is required." })
     .email({ message: "Please enter a valid email address." }),
   subject: z.string().min(1, { message: "Subject is required." }),
-  message: z
+  emailBody: z
     .string()
     .min(1, {
-      message:
-        "Message is required. Please let us know what we can help you with!",
+      message: "Message is required.",
     })
-    .max(250, {
-      message: "Please limit your message to 250 characters or less.",
-    }),
+    .max(8000, "Please limit your message to 8000 characters or less."),
 });
 
 // Define the shape of our form by creating a typescript type called "FormData"
@@ -35,7 +33,48 @@ const ContactForm = () => {
     formState: { errors },
   } = useZodForm({ schema: registerFormSchema });
 
-  const onRegister = (data: FormData) => console.log(data);
+  const toast = useToast();
+
+  const sendEmail = (data: FormData) => {
+    const templateParams = {
+      from_name: data.name,
+      from_email: data.email,
+      subject: data.subject,
+      message: data.emailBody,
+    };
+
+    emailjs
+      .send(
+        "service_zdz1uxe",
+        "template_v8m85of",
+        templateParams,
+        "yxTtH-YYw9wCHLCbC"
+      )
+      .then(
+        (result) => {
+          console.log(result);
+          toast({
+            title: "Message sent.",
+            description:
+              "We have received your message and will get back to you shortly.",
+            status: "success",
+            duration: 10000,
+            isClosable: true,
+          });
+        },
+        (error) => {
+          console.log(error);
+          toast({
+            title: "Oops! Something went wrong.",
+            description:
+              "We were unable to send message. Please give us a call or try again later.",
+            status: "error",
+            duration: 10000,
+            isClosable: true,
+          });
+        }
+      );
+  };
 
   return (
     <>
@@ -47,13 +86,12 @@ const ContactForm = () => {
       </Heading>
       <VStack
         as="form"
-        onSubmit={handleSubmit(onRegister)}
+        onSubmit={handleSubmit(sendEmail)}
         spacing={4}
         align="stretch"
       >
         <FormInput
           label="Name"
-          isRequired
           id={"name"}
           type={"text"}
           isInvalid={errors.name ? true : false}
@@ -62,7 +100,6 @@ const ContactForm = () => {
         />
         <FormInput
           label="Your Email Address"
-          isRequired
           id={"email"}
           type={"text"}
           isInvalid={errors.email ? true : false}
@@ -71,7 +108,6 @@ const ContactForm = () => {
         />
         <FormInput
           label={"Subject"}
-          isRequired
           id={"subject"}
           type={"text"}
           isInvalid={errors.subject ? true : false}
@@ -80,11 +116,10 @@ const ContactForm = () => {
         />
         <FormTextArea
           label={"Message"}
-          isRequired
-          id={"message"}
-          isInvalid={errors.message ? true : false}
-          register={{ ...register("message") }}
-          errorMessage={errors.message?.message}
+          id={"emailBody"}
+          isInvalid={errors.emailBody ? true : false}
+          register={{ ...register("emailBody") }}
+          errorMessage={errors.emailBody?.message}
         />
         <Button
           type="submit"

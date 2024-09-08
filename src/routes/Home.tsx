@@ -8,16 +8,24 @@ import {
   Link as ChakraLink,
   Text,
   Divider,
-  AbsoluteCenter,
-  Circle,
-  Icon,
-  Square,
 } from "@chakra-ui/react";
 import { componentColorScheme } from "../theme";
-import Feature from "../components/Feature";
+import Feature, { FeatureButton } from "../components/Feature";
 import { PhoneIcon } from "@chakra-ui/icons";
 
 const Home = () => {
+  const signUpButton: FeatureButton = {
+    name: "sign-up",
+    label: "Sign Up",
+    url: "https://driverightacademy.bedrivingus.com/affiliate/partner/index/enroll",
+  };
+
+  const logInButton: FeatureButton = {
+    name: "log-in",
+    label: "Log In",
+    url: "https://driverightacademy.bedrivingus.com/affiliate/partner/index/login",
+  };
+
   return (
     <Flex flexDir="column" flexGrow={1}>
       <Stack
@@ -70,7 +78,7 @@ const Home = () => {
         ></Box>
       </Stack>
       <Divider my="24px" />
-      <Heading fontSize="2xl" textAlign="center" my="12px">
+      <Heading size="lg" textAlign="center" my="12px">
         Why Choose Drive-Right?
       </Heading>
       <Stack p="24px" spacing={8} align="center">
@@ -94,6 +102,8 @@ const Home = () => {
             "We also offer an online Drivers Education option for those who are interested. More details about the online drivers education program to come."
           }
           justifyImage="left"
+          button_one={signUpButton}
+          button_two={logInButton}
         />
         <Feature
           title={"Cost Friendly Option"}

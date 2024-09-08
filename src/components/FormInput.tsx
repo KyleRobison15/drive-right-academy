@@ -49,6 +49,8 @@ export const FormTextArea = ({
   placeholder,
   errorMessage,
   isRequired,
+  type,
+  register,
 }: FormInputProps) => {
   return (
     <FormControl
@@ -57,7 +59,7 @@ export const FormTextArea = ({
       isRequired={isRequired}
     >
       <FormLabel htmlFor={id}>{label}</FormLabel>
-      <Textarea placeholder={placeholder} />
+      <Textarea placeholder={placeholder} id={id} type={type} {...register} />
       <FormErrorMessage>{errorMessage}</FormErrorMessage>
     </FormControl>
   );
