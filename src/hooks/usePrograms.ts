@@ -101,7 +101,7 @@ const programs: Program[] = [
         text: "Have a car with a manual transmission? For an additional $100/hr over our normal 40-Hour Teen Driving Program we'll teach you driving skills in a standard-shift car.",
       },
       {
-        label: "Logistics",
+        label: "Enrollment Details",
         highlights: [
           "Initial enrollment can be handled over the phone.",
           "A non refundable $50 deposit which counts toward your balance is required to reserve the spot.",

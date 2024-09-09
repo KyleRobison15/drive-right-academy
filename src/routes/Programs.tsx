@@ -6,6 +6,7 @@ import {
   HStack,
   Stack,
 } from "@chakra-ui/react";
+import { Link as ReactRouterLink } from "react-router-dom";
 import usePrograms, { useAlaCarte } from "../hooks/usePrograms";
 import ProgramsGrid from "../components/ProgramsGrid";
 import { componentColorScheme } from "../theme";
@@ -29,7 +30,8 @@ const Programs = () => {
           <Text fontSize={["sm", "md"]}>
             Don't know where to start?{" "}
             <ChakraLink
-              href="tel:7192009298"
+              as={ReactRouterLink}
+              to="/contact"
               color={`${componentColorScheme}.500`}
             >
               Contact us

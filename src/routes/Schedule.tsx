@@ -8,11 +8,11 @@ import {
   ListIcon,
   ListItem,
 } from "@chakra-ui/react";
+import { Link as ReactRouterLink } from "react-router-dom";
 import { componentColorScheme } from "../theme";
 import CohortsGrid from "../components/CohortsGrid";
 import useCohorts from "../hooks/useCohorts";
-import { FaCaretRight, FaChevronRight } from "react-icons/fa6";
-import { FaChevronCircleRight } from "react-icons/fa";
+import { FaCaretRight } from "react-icons/fa6";
 
 const Schedule = () => {
   const cohorts = useCohorts();
@@ -27,7 +27,8 @@ const Schedule = () => {
           <Text textAlign="center" fontSize={["sm", "md"]}>
             Have questions about our schedule or other programs?{" "}
             <ChakraLink
-              href="tel:7192009298"
+              as={ReactRouterLink}
+              to="/contact"
               color={`${componentColorScheme}.500`}
             >
               Contact us

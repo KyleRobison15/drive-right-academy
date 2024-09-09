@@ -92,7 +92,7 @@ const Home = () => {
         <Feature
           title={"Experienced and Locally Owned"}
           desc={
-            "Drive-Right Academy is locally and family owned and has been teaching teens and adults the skills necessary to become successful and legal drivers for over 20 years! We take pride in serving our community by utilizing our many years of experience to deliver the finest drivers education in Colorado Springs."
+            "Drive-Right Academy is locally and family owned and has been teaching teens and adults the skills necessary to become successful and legal drivers for over 12 years! We take pride in serving our community by utilizing our many years of experience to deliver the finest drivers education in Colorado Springs."
           }
           justifyImage="right"
         />

@@ -9,7 +9,7 @@ import {
   ListItem,
 } from "@chakra-ui/react";
 import { AccordionItemDetail, Program } from "../hooks/usePrograms";
-import { FaCaretRight, FaCheckCircle } from "react-icons/fa";
+import { FaCaretRight } from "react-icons/fa";
 import { componentColorScheme } from "../theme";
 
 interface Props {
