@@ -2,6 +2,7 @@ import { Flex, HStack, Hide, Show } from "@chakra-ui/react";
 import { Outlet } from "react-router-dom";
 import NavBarMobile from "./components/NavBar/NavBarMobile";
 import NavBar from "./components/NavBar/NavBar";
+import ScrollToTop from "./components/ScrollToTop";
 
 const App = () => {
   const mainContainerMx = ["0px", "24px", "75px", "150px"];
@@ -36,6 +37,7 @@ const App = () => {
         mb="100px"
         mx={mainContainerMx}
       >
+        <ScrollToTop />
         <Outlet />
       </Flex>
     </Flex>

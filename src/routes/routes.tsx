@@ -18,6 +18,7 @@ const applicationRoutes = [
       {
         path: "programs",
         element: <Programs />,
+        scrollTo: "top",
       },
       {
         path: "schedule",
