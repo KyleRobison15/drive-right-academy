@@ -17,6 +17,7 @@ import {
 } from "@chakra-ui/react";
 import { Link } from "react-router-dom";
 import { componentColorScheme } from "../../theme";
+import { MdOutlineMailOutline } from "react-icons/md";
 
 const NavMenu = () => {
   return (
@@ -49,6 +50,14 @@ const NavMenu = () => {
         <Link to="/about">
           <MenuItem icon={<IoPeopleOutline fontSize="18px" />} fontSize="md">
             About
+          </MenuItem>
+        </Link>
+        <Link to="/contact">
+          <MenuItem
+            icon={<MdOutlineMailOutline fontSize="18px" />}
+            fontSize="md"
+          >
+            Contact
           </MenuItem>
         </Link>
         <MenuDivider />

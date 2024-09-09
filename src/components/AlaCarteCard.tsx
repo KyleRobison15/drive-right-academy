@@ -20,7 +20,7 @@ const AlaCarteCard = ({ alaCarte }: Props) => {
   const { name, label, description, price, icon } = alaCarte;
 
   return (
-    <Card boxShadow="lg" variant="outline" p="24px" h="375px" bg="gray.50">
+    <Card boxShadow="lg" variant="outline" p="24px" h="390px" bg="gray.50">
       <CardHeader>
         <Flex justifyContent="center">
           {alaCarte.price && (
@@ -45,17 +45,7 @@ const AlaCarteCard = ({ alaCarte }: Props) => {
           </Heading>
         </Stack>
       </CardBody>
-      <CardFooter
-        justify="space-between"
-        flexWrap="wrap"
-        sx={{
-          "& > button": {
-            minW: "136px",
-          },
-        }}
-        pt={1}
-        mx={["0px", "16px", "24px", "42px"]}
-      >
+      <CardFooter>
         <EnrollNowButton />
       </CardFooter>
     </Card>

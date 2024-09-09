@@ -15,6 +15,8 @@ const Programs = () => {
   const programs = usePrograms();
   const alaCarteList = useAlaCarte();
 
+  const sectionMargins: string[] = ["2%", "5%", "8%", "12%"];
+
   return (
     <>
       <Flex direction="column" flexGrow={1} alignItems="center">
@@ -35,16 +37,16 @@ const Programs = () => {
           </Text>
         </Stack>
         <HStack>
-          <ProgramsGrid programs={programs} />
+          <ProgramsGrid programs={programs} mx={sectionMargins} />
         </HStack>
-        <Stack alignItems="center" mx="14px" mb="32px" mt="50px" spacing={4}>
+        <Stack alignItems="center" mb="32px" mt="50px" spacing={4}>
           <Heading size={["xl", "2xl"]}>A La Carte</Heading>
           <Text fontSize={["lg", "2xl"]} textAlign="center">
             Don't need any of our comprehensive programs? Pick and choose from
             these other services.
           </Text>
         </Stack>
-        <AlaCarteGrid alaCarteList={alaCarteList} />
+        <AlaCarteGrid alaCarteList={alaCarteList} mx={sectionMargins} />
       </Flex>
     </>
   );

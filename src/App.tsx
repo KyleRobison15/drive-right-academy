@@ -33,7 +33,7 @@ const App = () => {
         id="main-container"
         flexGrow="1"
         mt="75px"
-        mb="32px"
+        mb="100px"
         mx={mainContainerMx}
       >
         <Outlet />

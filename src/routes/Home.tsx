@@ -36,7 +36,7 @@ const Home = () => {
         align="center"
         textAlign={["center", "center", "left", "left"]}
       >
-        <Box maxW="32rem">
+        <Box maxW="40rem">
           <Text
             fontSize="xl"
             fontWeight="bold"
@@ -45,7 +45,7 @@ const Home = () => {
           >
             More than just the basics.
           </Text>
-          <Heading mb={4}>
+          <Heading mb={4} size={["xl", "xl", "xl", "2xl"]}>
             <Highlight
               query={"Drive Right!"}
               styles={{
@@ -108,7 +108,7 @@ const Home = () => {
         <Feature
           title={"Cost Friendly Option"}
           desc={
-            "At Drive-Right Academy, we believe learning the skills to become a confident, legal and safe driver shouldn't break the bank. We offer our Drivers Education services at a much lower cost than other competitors in the area."
+            "At Drive-Right Academy, we believe learning the skills to become a confident, legal and responsible driver shouldn't break the bank. We offer our Drivers Education services at a much lower cost than other competitors in the area."
           }
           justifyImage="right"
         />
