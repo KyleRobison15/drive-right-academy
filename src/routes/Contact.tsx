@@ -21,6 +21,7 @@ const Contact = () => {
       flexGrow={1}
       alignItems="center"
       justify="space-evenly"
+      mt="50px"
     >
       <Flex
         h={["350px", "375px"]}
