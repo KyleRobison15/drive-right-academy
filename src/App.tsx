@@ -37,7 +37,7 @@ const App = () => {
         mb="100px"
         mx={mainContainerMx}
       >
-        <ScrollToTop />
+        {/* <ScrollToTop /> */}
         <Outlet />
       </Flex>
     </Flex>
