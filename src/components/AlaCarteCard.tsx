@@ -17,7 +17,7 @@ interface Props {
 }
 
 const AlaCarteCard = ({ alaCarte }: Props) => {
-  const { name, label, description, price, icon } = alaCarte;
+  const { label } = alaCarte;
 
   return (
     <Card boxShadow="lg" variant="outline" p="24px" h="390px" bg="gray.50">
