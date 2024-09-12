@@ -8,10 +8,12 @@ import {
   Link as ChakraLink,
   Text,
   Divider,
+  Image,
 } from "@chakra-ui/react";
 import { componentColorScheme } from "../theme";
 import Feature, { FeatureButton } from "../components/Feature";
 import { PhoneIcon } from "@chakra-ui/icons";
+import DRALogo from "../assets/logoTransparentBkgd.png";
 
 const Home = () => {
   const signUpButton: FeatureButton = {
@@ -64,18 +66,12 @@ const Home = () => {
               size="lg"
               colorScheme={componentColorScheme}
               mt="24px"
-              mb="24px"
               rightIcon={<PhoneIcon boxSize="14px" ml="4px" />}
             >
               Call Now to Enroll
             </Button>
           </ChakraLink>
         </Box>
-        <Box
-          boxSize="350px"
-          minW="350px"
-          bg={`${componentColorScheme}.50`}
-        ></Box>
       </Stack>
       <Divider my="24px" />
       <Heading size="lg" textAlign="center" my="12px">
@@ -92,25 +88,18 @@ const Home = () => {
         <Feature
           title={"Experienced and Locally Owned"}
           desc={
-            "Drive-Right Academy is locally and family owned and has been teaching teens and adults the skills necessary to become successful and legal drivers for over 12 years! We take pride in serving our community by utilizing our many years of experience to deliver the finest drivers education in Colorado Springs."
+            "Drive-Right Academy is locally and family owned and has been teaching teens and adults the skills necessary to become successful and legal drivers for over 22 years! We take pride in serving our community by utilizing our many years of experience to deliver the finest drivers education in Colorado Springs and the surrounding Pikes Peak region."
           }
           justifyImage="right"
         />
         <Feature
           title={"Online Drivers Education"}
           desc={
-            "We also offer an online Drivers Education option for those who are interested. More details about the online drivers education program to come."
+            "Is your schedule too hectic for an in person class? The Colorado Teen On-line Program allows you to get the required 30 hour course completed on your own time."
           }
           justifyImage="left"
           button_one={signUpButton}
           button_two={logInButton}
-        />
-        <Feature
-          title={"Cost Friendly Option"}
-          desc={
-            "At Drive-Right Academy, we believe learning the skills to become a confident, legal and responsible driver shouldn't break the bank. We offer our Drivers Education services at a much lower cost than other competitors in the area."
-          }
-          justifyImage="right"
         />
       </Stack>
     </Flex>

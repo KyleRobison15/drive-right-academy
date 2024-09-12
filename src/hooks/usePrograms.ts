@@ -141,7 +141,8 @@ const programs: Program[] = [
     label: "Adult Driving Program",
     price: "$260",
     image: "",
-    description: "The Adult Driving Program needs a better description here...",
+    description:
+      "Please call for more information on our Adult Driving Program.",
     highlights: [
       {
         text: "Two 2-hour, skills-based, private road lessons",
@@ -156,7 +157,7 @@ const programs: Program[] = [
         badgeText: null,
       },
       {
-        text: "6 hours Behind-the-Wheel Training available. Please call for details",
+        text: "6 hours Behind-the-Wheel Training available. Please call for details.",
         badgeText: null,
       },
     ],
@@ -169,14 +170,22 @@ const programs: Program[] = [
     price: null,
     image: "",
     description:
-      "Need a better description of the online driver's education program here...",
+      "Is your schedule too hectic for an in person class? The Colorado Teen On-line Program allows you to get the required 30 hour course completed on your own time. Pricing is available when you sign up and create your account.",
     highlights: [
       {
-        text: "Self-paced",
+        text: "Online",
         badgeText: null,
       },
       {
-        text: "Online",
+        text: "Self-Paced",
+        badgeText: null,
+      },
+      {
+        text: "State Approved",
+        badgeText: null,
+      },
+      {
+        text: "Fulfills 30-Hour Course Requirement for Teens",
         badgeText: null,
       },
     ],
@@ -192,30 +201,6 @@ const programs: Program[] = [
     ],
     accordionItemDetails: [],
   },
-  // {
-  //   name: "a-la-carte",
-  //   label: "A La Carte",
-  //   price: null,
-  //   image: "",
-  //   description:
-  //     "Don't need any of our comprehensive programs? Pick and choose from these other services.",
-  //   highlights: [
-  //     {
-  //       text: "8-Hour Skills Based Driving Lab",
-  //       badgeText: "$149",
-  //     },
-  //     {
-  //       text: "Driving Test",
-  //       badgeText: "$65",
-  //     },
-  //     {
-  //       text: "2-Hour Manual Transmission Training",
-  //       badgeText: "$100/hr",
-  //     },
-  //   ],
-  //   links: null,
-  //   accordionItemDetails: [],
-  // },
 ];
 
 export const useAlaCarte = () => alaCarte;

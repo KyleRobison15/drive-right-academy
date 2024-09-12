@@ -15,6 +15,17 @@ import { ExternalLinkIcon } from "@chakra-ui/icons";
 
 const About = () => {
   const sectionMargins: string[] = ["5%", "5%", "5%", "12%"];
+  const skillsLabSkills: string[] = [
+    "Slalom Course",
+    "Threshold Braking",
+    "Braking While Turning",
+    "Pull-Push Steering",
+    "Emergency Lane Changes",
+    "Successful Backing",
+    "Parallel parking",
+    "Arm-Lock Steering",
+    "Aim High Vision",
+  ];
 
   return (
     <Flex direction="column" flexGrow={1}>
@@ -71,14 +82,14 @@ const About = () => {
                   as={FaCaretRight}
                   color={`${componentColorScheme}.500`}
                 />
-                2015 Mini Cooper
+                2022 Mini Cooper
               </ListItem>
               <ListItem>
                 <ListIcon
                   as={FaCaretRight}
                   color={`${componentColorScheme}.500`}
                 />
-                2013 Fiat 500 (manual)
+                2013 Fiat 500 (Manual Transmission)
               </ListItem>
             </List>
             <Text>
@@ -89,102 +100,68 @@ const About = () => {
           </Stack>
         </Stack>
       </Stack>
-      {/* <Stack mx={sectionMargins} mt="24px">
-        <Heading textColor={`${componentColorScheme}.500`}>
-          Our Vehicles
-        </Heading>
-        <Stack spacing={5}>
-          <Text fontWeight="bold">Current Drive-Right Academy Vehicles:</Text>
-          <List spacing={2} ml="15px">
-            <ListItem>
-              <ListIcon
-                as={FaCaretRight}
-                color={`${componentColorScheme}.500`}
-              />
-              2015 Mini Cooper
-            </ListItem>
-            <ListItem>
-              <ListIcon
-                as={FaCaretRight}
-                color={`${componentColorScheme}.500`}
-              />
-              2013 Fiat 500 (manual)
-            </ListItem>
-          </List>
-          <Text>
-            Not only do our cars feature the highest safety and performance
-            standards on the market, they're also cool and downright fun cars to
-            drive!
-          </Text>
-        </Stack>
-      </Stack> */}
       <Stack mx={sectionMargins} mt="24px">
         <Heading textColor={`${componentColorScheme}.500`}>
           Our Approach to Success
         </Heading>
         <Stack spacing={5}>
           <Text>
-            Our Driver's Education Program philosophy is simple. What makes a
-            successful driver? When they can demonstrate a skill. We don't tell
-            your teen what to do or what not to do behind the wheel, we teach
-            the skills necessary to make him or her a successful driver. Ask
-            yourself “How much is my child worth? Don't I want to do everything
-            I can to keep him or her as safe as possible?” Starting with a
-            quality, skills based Driver's Education Program from Drive-Right
-            Academy will ease your mind and keep your child safe in the most
-            dangerous place of all: behind the wheel.
-          </Text>
-          <Text>
             Drive-Right Academy is locally owned and has been teaching teens and
             adults the skills necessary to become successful and legal drivers
-            for 11 years. I was told recently by an adult Driver's Education
-            student, amazed at how much even a seasoned driver can learn from
-            our Program: “Before I took the [Drive-Right] course, no one ever
-            took the time to teach me the techniques! If I had found myself in a
-            skid what would I have done? I found out that something as simple as
-            where I place my hands on the wheel will guarantee that I avoid
-            accidents!”
+            for the last 22 years. Through the years, we've learned a thing or
+            two about how to teach Driver's Education effectively.
           </Text>
           <Text>
-            Did you learn to drive from your parents? From your High school shop
-            teacher in a four hour Saturday driving class with two other
-            students in the back seat? You learned to stop at a stop sign, you
-            learned to use your turn signal before you make a turn, but chances
-            are you didn't learn the skills you need to avoid accidents. You
-            learned to drive like your parents who probably learned from their
-            parents. Why do we do what we do they way we do it? To save lives.
-            Pure and simple. Teaching your child proper hand placement on the
-            wheel, how to avoid accidents, how to recover from a skid, learning
-            these skills saves lives.
+            We not only offer the benefit of a Skills-Based Driving Lab, but we
+            also invest a lot of effort to ensure that the classroom portion is
+            an interactive dialogue between the instructor and students. Rather
+            than reading straight through a textbook, we employ a variety of
+            learning techniques to keep students engaged and interested. We
+            believe this approach is an essential reason why our student's
+            retain the information we teach, and leave our programs with the
+            fundamentals and skills required to drive responsibly in the real
+            world.
           </Text>
           <Text>
-            Why is a course from Drive-Right Academy so successful? We teach
-            your student driver the skills in the classroom before they even get
-            in the car. They'll know successful driving techniques before they
-            get behind the wheel. Other Driver's Education Programs put your
-            child behind the wheel the second you drop them off. They are never
-            taught the skills they need to become good drivers. They learn
-            enough to pass their driving test, but have no idea what to do to
-            avoid a collision, to recover from a skid.
+            Drive-Right Academy is your road to successful Driver's Education.
+          </Text>
+        </Stack>
+      </Stack>
+      <Stack mx={sectionMargins} mt="24px">
+        <Heading textColor={`${componentColorScheme}.500`}>
+          Skills-Based Driving Lab
+        </Heading>
+        <Stack spacing={5}>
+          <Text>
+            Our Skills-Based Driving Lab is an invaluable learning clinic for
+            your teen to develop the fundamental skills needed before the On-the
+            Road Lessons. Held in a parking lot in a highly controlled
+            environment, instructors work individually with each student on the
+            following exercises:
           </Text>
           <List spacing={2} ml="15px">
-            <ListItem>
-              <ListIcon
-                as={FaCaretRight}
-                color={`${componentColorScheme}.500`}
-              />
-              We teach the skills. We ease your mind.
-            </ListItem>
-            <ListItem>
-              <ListIcon
-                as={FaCaretRight}
-                color={`${componentColorScheme}.500`}
-              />
-              We create successful, responsible, educated drivers.
-            </ListItem>
+            {skillsLabSkills.map((skill) => (
+              <ListItem key={skill}>
+                <ListIcon
+                  as={FaCaretRight}
+                  color={`${componentColorScheme}.500`}
+                />
+                {skill}
+              </ListItem>
+            ))}
           </List>
+        </Stack>
+      </Stack>
+      <Stack mx={sectionMargins} mt="24px">
+        <Heading textColor={`${componentColorScheme}.500`}>
+          Insurance Discounts
+        </Heading>
+        <Stack spacing={5}>
           <Text>
-            Drive-Right Academy is Your Road to Successful Driver's Education.
+            Many of our programs qualify for insurance discounts. The discounts
+            vary among insurance companies, so you should check with your
+            provider. Upon completion of the course, we issue a certificate for
+            submission to your insurance company.
           </Text>
         </Stack>
       </Stack>
