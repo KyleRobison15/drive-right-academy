@@ -3,6 +3,7 @@ import { Outlet } from "react-router-dom";
 import NavBarMobile from "./components/NavBar/NavBarMobile";
 import NavBar from "./components/NavBar/NavBar";
 import ScrollToTop from "./components/ScrollToTop";
+import Footer from "./components/Footer";
 
 const App = () => {
   const mainContainerMx = ["0px", "24px", "75px", "150px"];
@@ -40,6 +41,7 @@ const App = () => {
         <ScrollToTop />
         <Outlet />
       </Flex>
+      <Footer />
     </Flex>
   );
 };
