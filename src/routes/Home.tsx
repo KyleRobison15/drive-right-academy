@@ -8,12 +8,10 @@ import {
   Link as ChakraLink,
   Text,
   Divider,
-  Image,
 } from "@chakra-ui/react";
 import { componentColorScheme } from "../theme";
 import Feature, { FeatureButton } from "../components/Feature";
 import { PhoneIcon } from "@chakra-ui/icons";
-import DRALogo from "../assets/logoTransparentBkgd.png";
 
 const Home = () => {
   const signUpButton: FeatureButton = {
