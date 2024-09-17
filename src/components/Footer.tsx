@@ -1,7 +1,7 @@
 import { HStack, Icon, Link, Stack, Text } from "@chakra-ui/react";
 import { BsGithub, BsLinkedin } from "react-icons/bs";
 import { FaRegCopyright } from "react-icons/fa6";
-import { MdAlternateEmail } from "react-icons/md";
+import KRDevIcon from "./KRDevIcon";
 
 const Footer = () => {
   return (
@@ -24,15 +24,20 @@ const Footer = () => {
       </HStack>
       <Stack direction="row" alignItems="center">
         <Text fontSize="sm">Website created by Kyle Robison:</Text>
-        <HStack spacing={3}>
+        <HStack spacing={3} alignItems="center">
           <Link href="https://github.com/KyleRobison15" isExternal>
-            <Icon as={BsGithub} boxSize="18px" color="brand.600" />
+            <Icon as={BsGithub} boxSize="18px" />
           </Link>
           <Link href="https://www.linkedin.com/in/kyle-robison/" isExternal>
-            <Icon as={BsLinkedin} boxSize="18px" color="brand.600" />
+            <Icon as={BsLinkedin} boxSize="18px" />
           </Link>
-          <Link href="mailto: kylerobison15@gmail.com" isExternal>
-            <Icon as={MdAlternateEmail} boxSize="22px" color="brand.600" />
+          <Link
+            href="https://kyle-robison.vercel.app/"
+            isExternal
+            mb="10px"
+            mt="0px"
+          >
+            <KRDevIcon />
           </Link>
         </HStack>
       </Stack>
