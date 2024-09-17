@@ -1,5 +1,6 @@
 import { HStack, Icon, Link, Stack, Text } from "@chakra-ui/react";
 import { BsGithub, BsLinkedin } from "react-icons/bs";
+import { FaRegCopyright } from "react-icons/fa6";
 import { MdAlternateEmail } from "react-icons/md";
 
 const Footer = () => {
@@ -17,7 +18,10 @@ const Footer = () => {
       bg="gray.50"
       borderTopWidth="1px"
     >
-      <Text fontSize="sm">Copyright 2024 Drive Right Academy</Text>
+      <HStack spacing={1}>
+        <Icon as={FaRegCopyright} boxSize="12px" />
+        <Text fontSize="sm">2024 Drive Right Academy</Text>
+      </HStack>
       <Stack direction="row" alignItems="center">
         <Text fontSize="sm">Website created by Kyle Robison:</Text>
         <HStack spacing={3}>
