@@ -37,7 +37,7 @@ const Schedule = () => {
         </Stack>
         <Stack alignItems="center" mx="14px">
           <Text fontSize={["2xl", "3xl"]} textAlign="center">
-            2025 Fall and Winter Classes
+            2024/2025 Winter Classes
           </Text>
           <Text textAlign="center" fontSize={["md", "lg"]}>
             All class times are 8am-4pm MST.
