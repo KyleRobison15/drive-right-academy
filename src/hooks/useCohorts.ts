@@ -13,58 +13,6 @@ export interface Cohort {
 const cohorts: Cohort[] = [
   {
     cohortId: "DR-1",
-    label: "September Class",
-    classDates: [
-      {
-        month: "September",
-        day: "7",
-        year: "2024",
-      },
-      {
-        month: "September",
-        day: "14",
-        year: "2024",
-      },
-      {
-        month: "September",
-        day: "21",
-        year: "2024",
-      },
-      {
-        month: "September",
-        day: "28",
-        year: "2024",
-      },
-    ],
-  },
-  {
-    cohortId: "DR-2",
-    label: "October/November Class",
-    classDates: [
-      {
-        month: "October",
-        day: "19",
-        year: "2024",
-      },
-      {
-        month: "October",
-        day: "26",
-        year: "2024",
-      },
-      {
-        month: "November",
-        day: "2",
-        year: "2024",
-      },
-      {
-        month: "November",
-        day: "9",
-        year: "2024",
-      },
-    ],
-  },
-  {
-    cohortId: "DR-3",
     label: "November/December Class",
     classDates: [
       {
@@ -86,6 +34,58 @@ const cohorts: Cohort[] = [
         month: "December",
         day: "21",
         year: "2024",
+      },
+    ],
+  },
+  {
+    cohortId: "DR-2",
+    label: "January/February Class",
+    classDates: [
+      {
+        month: "January",
+        day: "11",
+        year: "2025",
+      },
+      {
+        month: "January",
+        day: "18",
+        year: "2025",
+      },
+      {
+        month: "January",
+        day: "25",
+        year: "2025",
+      },
+      {
+        month: "February",
+        day: "1",
+        year: "2025",
+      },
+    ],
+  },
+  {
+    cohortId: "DR-3",
+    label: "February/March Class",
+    classDates: [
+      {
+        month: "February",
+        day: "22",
+        year: "2025",
+      },
+      {
+        month: "March",
+        day: "1",
+        year: "2025",
+      },
+      {
+        month: "March",
+        day: "8",
+        year: "2025",
+      },
+      {
+        month: "March",
+        day: "15",
+        year: "2025",
       },
     ],
   },
