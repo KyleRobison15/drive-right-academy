@@ -17,13 +17,13 @@ interface Props {
 }
 
 const AlaCarteCard = ({ alaCarte }: Props) => {
-  const { label } = alaCarte;
+  const { label, aria, price, icon } = alaCarte;
 
   return (
     <Card boxShadow="lg" variant="outline" p="24px" h="390px" bg="gray.50">
       <CardHeader>
         <Flex justifyContent="center">
-          {alaCarte.price && (
+          {price && (
             <Badge
               px="8px"
               py="3px"
@@ -32,14 +32,14 @@ const AlaCarteCard = ({ alaCarte }: Props) => {
               fontSize="1.3rem"
               borderRadius="4px"
             >
-              {alaCarte.price}
+              {price}
             </Badge>
           )}
         </Flex>
       </CardHeader>
       <CardBody mt="10px">
         <Stack alignItems="center" spacing={4}>
-          <Icon as={alaCarte.icon} boxSize="32px" />
+          <Icon as={icon} boxSize="32px" aria-label={aria} />
           <Heading textAlign="center" size="md">
             {label}
           </Heading>

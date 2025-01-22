@@ -36,6 +36,7 @@ export interface AlaCarte {
   description: string;
   price: string;
   icon: IconType;
+  aria: string;
 }
 
 const alaCarte: AlaCarte[] = [
@@ -45,6 +46,7 @@ const alaCarte: AlaCarte[] = [
     description: "8-Hour, hands-on driving class with Drive-Right instructors.",
     price: "$149",
     icon: BiSolidTrafficCone,
+    aria: "Traffic Cone Icon",
   },
   {
     name: "driving-test",
@@ -52,6 +54,7 @@ const alaCarte: AlaCarte[] = [
     price: "$65",
     description: "",
     icon: FaIdCard,
+    aria: "Identification Card Icon",
   },
   {
     name: "manual-transmission-training",
@@ -60,6 +63,7 @@ const alaCarte: AlaCarte[] = [
       "2-Hour Manual Transmission Training in a Drive-Right Academy Vehicle.",
     price: "$100/hr",
     icon: TbManualGearbox,
+    aria: "Manual Gearbox Icon",
   },
 ];
 

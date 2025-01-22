@@ -19,20 +19,34 @@ const Footer = () => {
       borderTopWidth="1px"
     >
       <HStack spacing={1}>
-        <Icon as={FaRegCopyright} boxSize="12px" />
+        <Icon as={FaRegCopyright} aria-label="Copyright" boxSize="12px" />
         <Text fontSize="sm">2024 Drive Right Academy</Text>
       </HStack>
       <Stack direction="row" alignItems="center">
         <Text fontSize="sm">Website created by Kyle Robison:</Text>
         <HStack spacing={3} alignItems="center">
-          <Link href="https://github.com/KyleRobison15" isExternal>
-            <Icon as={BsGithub} boxSize="18px" />
-          </Link>
-          <Link href="https://www.linkedin.com/in/kyle-robison/" isExternal>
-            <Icon as={BsLinkedin} boxSize="18px" />
+          <Link
+            href="https://github.com/KyleRobison15"
+            isExternal
+          >
+            <Icon
+              as={BsGithub}
+              boxSize="18px"
+              aria-label="KyleRobison15 GitHub"
+            />
           </Link>
           <Link
-            href="https://kyle-robison.vercel.app/"
+            href="https://www.linkedin.com/in/kyle-robison/"
+            isExternal
+          >
+            <Icon
+              aria-label="kyle-robison LinkedIn"
+              as={BsLinkedin}
+              boxSize="18px"
+            />
+          </Link>
+          <Link
+            href="https://kylerobison.com/"
             isExternal
             mb="10px"
             mt="0px"

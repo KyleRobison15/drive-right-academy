@@ -74,6 +74,7 @@ const Feature = ({
         minW="300px"
         boxSize="300px"
         bg={`${componentColorScheme}.50`}
+        aria-label="Image Coming Soon"
       ></Box>
     </Stack>
   );
