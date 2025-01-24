@@ -4,6 +4,7 @@ import Contact from "./Contact";
 import Home from "./Home";
 import Programs from "./Programs";
 import Schedule from "./Schedule";
+import SiteMap from "./SiteMap";
 
 const applicationRoutes = [
   {
@@ -30,6 +31,10 @@ const applicationRoutes = [
       {
         path: "contact",
         element: <Contact />,
+      },
+      {
+        path: "sitemap",
+        element: <SiteMap />,
       },
     ],
   },
