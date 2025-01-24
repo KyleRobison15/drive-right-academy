@@ -32,7 +32,7 @@ const Footer = () => {
           <Link href="https://github.com/KyleRobison15" isExternal>
             <Icon
               as={BsGithub}
-              boxSize="18px"
+              boxSize="24px"
               aria-label="KyleRobison15 GitHub"
             />
           </Link>
@@ -40,7 +40,7 @@ const Footer = () => {
             <Icon
               aria-label="kyle-robison LinkedIn"
               as={BsLinkedin}
-              boxSize="18px"
+              boxSize="24px"
             />
           </Link>
           <Link href="https://kylerobison.com/" isExternal mb="10px" mt="0px">

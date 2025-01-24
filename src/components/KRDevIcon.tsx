@@ -4,7 +4,7 @@ const KRDevIcon = () => {
   return (
     <Icon
       viewBox="0 0 200 200"
-      boxSize="18px"
+      boxSize="24px"
       aria-label="Personal Portfolio Website"
     >
       <path
