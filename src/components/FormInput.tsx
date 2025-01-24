@@ -36,7 +36,7 @@ const FormInput = ({
       isRequired={isRequired}
     >
       <FormLabel htmlFor={id}>{label}</FormLabel>
-      <Input placeholder={placeholder} id={id} type={type} {...register} />
+      <Input autoComplete={id} placeholder={placeholder} id={id} type={type} {...register} />
       <FormErrorMessage>{errorMessage}</FormErrorMessage>
     </FormControl>
   );
