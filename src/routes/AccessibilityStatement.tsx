@@ -3,7 +3,7 @@ import { componentColorScheme } from "../theme";
 
 const AccessibilityStatement = () => {
   return (
-    <Stack spacing={4} mt="50px">
+    <Stack spacing={4} mt="50px" mx="24px">
       <Heading textAlign="center" size={["xl", "2xl"]} mb="32px">
         Accessibility
       </Heading>
