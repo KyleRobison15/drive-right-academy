@@ -1,5 +1,6 @@
 import App from "../App";
 import About from "./About";
+import AccessibilityStatement from "./AccessibilityStatement";
 import Contact from "./Contact";
 import Home from "./Home";
 import Programs from "./Programs";
@@ -35,6 +36,10 @@ const applicationRoutes = [
       {
         path: "sitemap",
         element: <SiteMap />,
+      },
+      {
+        path: "accessibility",
+        element: <AccessibilityStatement />,
       },
     ],
   },

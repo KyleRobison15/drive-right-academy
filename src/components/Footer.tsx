@@ -3,6 +3,7 @@ import { BsGithub, BsLinkedin } from "react-icons/bs";
 import { FaRegCopyright } from "react-icons/fa6";
 import KRDevIcon from "./KRDevIcon";
 import { Link as ReactRouterLink } from "react-router-dom";
+import { componentColorScheme } from "../theme";
 
 const Footer = () => {
   return (
@@ -19,13 +20,20 @@ const Footer = () => {
       bg="gray.50"
       borderTopWidth="1px"
     >
-      <HStack spacing={1}>
-        <Icon as={FaRegCopyright} aria-label="Copyright" boxSize="12px" />
-        <Text fontSize="sm">2024 Drive Right Academy</Text>
+      <HStack spacing={3}>
+        <HStack spacing={1}>
+          <Icon as={FaRegCopyright} aria-label="Copyright" boxSize="12px" />
+          <Text fontSize="sm">2024 Drive Right Academy</Text>
+        </HStack>
+        <Text fontSize="sm">|</Text>
+        <Link fontSize="sm" as={ReactRouterLink} to="/sitemap" color={`${componentColorScheme}.500`}>
+          Sitemap
+        </Link>
+        <Text fontSize="sm">|</Text>
+        <Link fontSize="sm" as={ReactRouterLink} to="/accessibility" color={`${componentColorScheme}.500`}>
+          Accessibility
+        </Link>
       </HStack>
-      <Link fontSize="sm" as={ReactRouterLink} to="/sitemap">
-        Sitemap
-      </Link>
       <Stack direction="row" alignItems="center">
         <Text fontSize="sm">Website created by Kyle Robison:</Text>
         <HStack spacing={3} alignItems="center">
