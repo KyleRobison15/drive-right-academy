@@ -13,58 +13,6 @@ export interface Cohort {
 const cohorts: Cohort[] = [
   {
     cohortId: "DR-1",
-    label: "November/December Class",
-    classDates: [
-      {
-        month: "November",
-        day: "30",
-        year: "2024",
-      },
-      {
-        month: "December",
-        day: "7",
-        year: "2024",
-      },
-      {
-        month: "December",
-        day: "14",
-        year: "2024",
-      },
-      {
-        month: "December",
-        day: "21",
-        year: "2024",
-      },
-    ],
-  },
-  {
-    cohortId: "DR-2",
-    label: "January/February Class",
-    classDates: [
-      {
-        month: "January",
-        day: "11",
-        year: "2025",
-      },
-      {
-        month: "January",
-        day: "18",
-        year: "2025",
-      },
-      {
-        month: "January",
-        day: "25",
-        year: "2025",
-      },
-      {
-        month: "February",
-        day: "1",
-        year: "2025",
-      },
-    ],
-  },
-  {
-    cohortId: "DR-3",
     label: "February/March Class",
     classDates: [
       {
@@ -85,6 +33,136 @@ const cohorts: Cohort[] = [
       {
         month: "March",
         day: "15",
+        year: "2025",
+      },
+    ],
+  },
+  {
+    cohortId: "DR-2",
+    label: "April Class",
+    classDates: [
+      {
+        month: "April",
+        day: "5",
+        year: "2025",
+      },
+      {
+        month: "April",
+        day: "12",
+        year: "2025",
+      },
+      {
+        month: "April",
+        day: "19",
+        year: "2025",
+      },
+      {
+        month: "April",
+        day: "26",
+        year: "2025",
+      },
+    ],
+  },
+  {
+    cohortId: "DR-3",
+    label: "June Class One",
+    classDates: [
+      {
+        month: "June",
+        day: "4",
+        year: "2025",
+      },
+      {
+        month: "June",
+        day: "5",
+        year: "2025",
+      },
+      {
+        month: "June",
+        day: "6",
+        year: "2025",
+      },
+      {
+        month: "June",
+        day: "7",
+        year: "2025",
+      },
+    ],
+  },
+  {
+    cohortId: "DR-4",
+    label: "June Class Two",
+    classDates: [
+      {
+        month: "June",
+        day: "25",
+        year: "2025",
+      },
+      {
+        month: "June",
+        day: "26",
+        year: "2025",
+      },
+      {
+        month: "June",
+        day: "27",
+        year: "2025",
+      },
+      {
+        month: "June",
+        day: "28",
+        year: "2025",
+      },
+    ],
+  },
+  {
+    cohortId: "DR-5",
+    label: "July Class",
+    classDates: [
+      {
+        month: "July",
+        day: "9",
+        year: "2025",
+      },
+      {
+        month: "July",
+        day: "10",
+        year: "2025",
+      },
+      {
+        month: "July",
+        day: "11",
+        year: "2025",
+      },
+      {
+        month: "July",
+        day: "12",
+        year: "2025",
+      },
+    ],
+  },
+  {
+    cohortId: "DR-6",
+    label: "July/August Class",
+    classDates: [
+      {
+        month: "July",
+        day: "30",
+        year: "2025",
+      },
+      {
+        month: "July",
+        day: "31",
+        year: "2025",
+      },
+      {
+        month: "August",
+        day: "1",
+        year: "2025",
+      },
+      {
+        month: "August",
+        day: "2",
         year: "2025",
       },
     ],
