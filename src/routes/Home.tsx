@@ -45,14 +45,6 @@ const Home = () => {
           >
             More than just the basics.
           </Text>
-          <Text
-            fontSize="xl"
-            fontWeight="bold"
-            color={`${componentColorScheme}.500`}
-            mb={4}
-          >
-            More than just the basics.
-          </Text>
           <Heading mb={4} size={["xl", "xl", "xl", "2xl"]}>
             <Highlight
               query={"Drive Right!"}
