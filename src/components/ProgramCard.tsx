@@ -57,7 +57,7 @@ const ProgramCard = ({ program }: Props) => {
 
     if (accordionItemDetails !== null && accordionItemDetails.length !== 0) {
       return (
-        <Accordion allowMultiple>
+        <Accordion allowMultiple pb={4}>
           {accordionItemDetails.map((item, index) => (
             <ProgramAccordionItem
               accordionItemDetail={item}
@@ -103,6 +103,7 @@ const ProgramCard = ({ program }: Props) => {
           {program.description}
         </Text>
         <Box mt="24px">{renderProgramAccordionItems()}</Box>
+        <Text mt="12px" fontStyle="italic">{program.footerText}</Text>
       </CardBody>
       <CardFooter
         justify="space-between"
