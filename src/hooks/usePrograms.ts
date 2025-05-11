@@ -116,7 +116,7 @@ const programs: Program[] = [
       },
     ],
     footerText:
-      "* A non refundable $50 deposit which counts toward your balance is required to enroll.",
+      "* A non-refundable, $50 deposit which counts toward your balance is required to enroll.",
   },
   {
     name: "behind-the-wheel",
@@ -142,7 +142,7 @@ const programs: Program[] = [
     links: null,
     accordionItemDetails: [],
     footerText:
-      "* A non refundable $50 deposit which counts toward your balance is required to enroll.",
+      "* A non-refundable, $50 deposit which counts toward your balance is required to enroll.",
   },
   {
     name: "adult-driving-program",
@@ -172,7 +172,7 @@ const programs: Program[] = [
     links: null,
     accordionItemDetails: [],
     footerText:
-      "* A non refundable $50 deposit which counts toward your balance is required to enroll.",
+      "* A non-refundable, $50 deposit which counts toward your balance is required to enroll.",
   },
   {
     name: "online-drivers-education",
