@@ -28,6 +28,7 @@ export interface Program {
   highlights: Highlight[];
   links: CardLink[] | null;
   accordionItemDetails: AccordionItemDetail[] | null;
+  footerText: string | null;
 }
 
 export interface AlaCarte {
@@ -100,21 +101,22 @@ const programs: Program[] = [
     links: null,
     accordionItemDetails: [
       {
-        label: "Manual Transmission Training",
-        highlights: null,
-        text: "Have a car with a manual transmission? For an additional $100/hr over our normal 40-Hour Teen Driving Program we'll teach you driving skills in a standard-shift car.",
-      },
-      {
         label: "Enrollment Details",
         highlights: [
           "Initial enrollment can be handled over the phone.",
-          "A non refundable $50 deposit which counts toward your balance is required to reserve the spot.",
           "Official Registration and Payment are handled the first day of class.",
           "Depending on availability, cars for the Driving Lab may be rented for an additional $50 if the student is unable to provide one.",
         ],
         text: null,
       },
+      {
+        label: "Manual Transmission Training",
+        highlights: null,
+        text: "Have a car with a manual transmission? For an additional $100/hr over our normal 40-Hour Teen Driving Program we'll teach you driving skills in a standard-shift car.",
+      },
     ],
+    footerText:
+      "* A non-refundable, $50 deposit which counts toward your balance is required to enroll.",
   },
   {
     name: "behind-the-wheel",
@@ -139,6 +141,8 @@ const programs: Program[] = [
     ],
     links: null,
     accordionItemDetails: [],
+    footerText:
+      "* A non-refundable, $50 deposit which counts toward your balance is required to enroll.",
   },
   {
     name: "adult-driving-program",
@@ -167,6 +171,8 @@ const programs: Program[] = [
     ],
     links: null,
     accordionItemDetails: [],
+    footerText:
+      "* A non-refundable, $50 deposit which counts toward your balance is required to enroll.",
   },
   {
     name: "online-drivers-education",
@@ -204,6 +210,7 @@ const programs: Program[] = [
       },
     ],
     accordionItemDetails: [],
+    footerText: null,
   },
 ];
 
