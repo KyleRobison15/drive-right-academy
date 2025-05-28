@@ -121,22 +121,22 @@ const cohorts: Cohort[] = [
     classDates: [
       {
         month: "July",
-        day: "9",
+        day: "16",
         year: "2025",
       },
       {
         month: "July",
-        day: "10",
+        day: "17",
         year: "2025",
       },
       {
         month: "July",
-        day: "11",
+        day: "18",
         year: "2025",
       },
       {
         month: "July",
-        day: "12",
+        day: "19",
         year: "2025",
       },
     ],
