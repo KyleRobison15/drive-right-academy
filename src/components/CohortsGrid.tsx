@@ -8,9 +8,18 @@ interface Props {
 }
 
 const CohortsGrid = ({ cohorts }: Props) => {
+  
+  const numCohorts = cohorts.length;
+
   return (
     <SimpleGrid
-      columns={{ base: 1, sm: 1, md: 1, lg: 2, xl: 3 }}
+      columns={{
+        base: 1,
+        sm: 1,
+        md: 1,
+        lg: numCohorts < 2 ? 1 : 2,
+        xl: numCohorts === 1 ? 1 : numCohorts === 2 ? 2 : 3,
+      }}
       padding="12px"
       spacing={6}
       mx={["0px", "8px", "16px"]}
