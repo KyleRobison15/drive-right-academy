@@ -12,6 +12,9 @@ import {
 import { componentColorScheme } from "../theme";
 import Feature, { FeatureButton } from "../components/Feature";
 import { PhoneIcon } from "@chakra-ui/icons";
+import OnlineDriversEdImg from "../assets/IMG_5014.jpg";
+import FamilyOwnedImg from "../assets/IMG_4992.jpg";
+import RightApproachImg from "../assets/DSC_9883.jpg"
 
 const Home = () => {
   const signUpButton: FeatureButton = {
@@ -82,6 +85,9 @@ const Home = () => {
             "Our classroom portion and top-notch road sessions provide an interactive, upbeat approach. We take the time to go beyond the basics to ensure that your teen gains an appreciation for responsible driving."
           }
           justifyImage="left"
+          imageSrc={RightApproachImg}
+          ariaLabel="Driver Image"
+          objectFit="cover"
         />
         <Feature
           title={"Experienced and Locally Owned"}
@@ -89,6 +95,9 @@ const Home = () => {
             "Drive-Right Academy is locally and family owned and has been teaching teens and adults the skills necessary to become successful and legal drivers for over 22 years! We take pride in serving our community by utilizing our many years of experience to deliver the finest drivers education in Colorado Springs and the surrounding Pikes Peak region."
           }
           justifyImage="right"
+          imageSrc={FamilyOwnedImg}
+          ariaLabel="Family Owned Image"
+          objectFit="cover"
         />
         <Feature
           title={"Online Drivers Education"}
@@ -98,6 +107,9 @@ const Home = () => {
           justifyImage="left"
           button_one={signUpButton}
           button_two={logInButton}
+          imageSrc={OnlineDriversEdImg}
+          ariaLabel="Online Drivers Education Image"
+          objectFit=""
         />
       </Stack>
     </Flex>

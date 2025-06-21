@@ -1,4 +1,4 @@
-import { Box, Button, HStack, Heading, Stack, Text } from "@chakra-ui/react";
+import { Box, Button, HStack, Heading, Stack, Text, Image} from "@chakra-ui/react";
 import { componentColorScheme } from "../theme";
 import { ChevronRightIcon } from "@chakra-ui/icons";
 
@@ -8,6 +8,9 @@ interface Props {
   button_one?: FeatureButton;
   button_two?: FeatureButton;
   justifyImage: "left" | "right";
+  imageSrc: string;
+  ariaLabel: string;
+  objectFit: "cover" | "" | null;
 }
 
 export interface FeatureButton {
@@ -23,6 +26,9 @@ const Feature = ({
   justifyImage,
   button_one,
   button_two,
+  imageSrc,
+  ariaLabel,
+  objectFit
 }: Props) => {
   const imageOrder = justifyImage === "left" ? 1 : 2;
   const textOrder = justifyImage === "left" ? 2 : 1;
@@ -69,13 +75,14 @@ const Feature = ({
           )}
         </HStack>
       </Box>
-      <Box
+      <Image
         order={[2, 2, imageOrder, imageOrder]}
-        minW="300px"
-        boxSize="300px"
-        bg={`${componentColorScheme}.50`}
-        aria-label="Image Coming Soon"
-      ></Box>
+        minW="375px"
+        boxSize="375px"
+        src={imageSrc}
+        aria-label={ariaLabel}
+        objectFit={objectFit === "cover" ? "cover" : "inherit"}
+      ></Image>
     </Stack>
   );
 };
