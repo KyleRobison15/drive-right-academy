@@ -117,52 +117,52 @@ const cohorts: Cohort[] = [
   // },
   // {
   //   cohortId: "DR-5",
-  //   label: "July Class",
+  //   label: "July/August Class",
   //   classDates: [
   //     {
   //       month: "July",
-  //       day: "16",
+  //       day: "30",
   //       year: "2025",
   //     },
   //     {
   //       month: "July",
-  //       day: "17",
+  //       day: "31",
   //       year: "2025",
   //     },
   //     {
-  //       month: "July",
-  //       day: "18",
+  //       month: "August",
+  //       day: "1",
   //       year: "2025",
   //     },
   //     {
-  //       month: "July",
-  //       day: "19",
+  //       month: "August",
+  //       day: "2",
   //       year: "2025",
   //     },
   //   ],
   // },
   {
     cohortId: "DR-6",
-    label: "July/August Class",
+    label: "September/October Class",
     classDates: [
       {
-        month: "July",
-        day: "30",
+        month: "September",
+        day: "20",
         year: "2025",
       },
       {
-        month: "July",
-        day: "31",
+        month: "September",
+        day: "27",
         year: "2025",
       },
       {
-        month: "August",
-        day: "1",
+        month: "October",
+        day: "4",
         year: "2025",
       },
       {
-        month: "August",
-        day: "2",
+        month: "October",
+        day: "11",
         year: "2025",
       },
     ],
