@@ -44,7 +44,7 @@ const Schedule = () => {
           </Text>
           <CohortsGrid cohorts={cohorts} />
           <Text fontSize={["2xl", "3xl"]} textAlign="center" fontStyle="italic" my="20px" p="12px" bg={`${componentColorScheme}.100`} borderRadius="4px">
-            2025 Fall Schedule Coming Soon!
+            2025 Fall/Winter Schedule Coming Soon!
           </Text>
         </Stack>
         <List
