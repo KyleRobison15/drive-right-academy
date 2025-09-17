@@ -37,15 +37,15 @@ const Schedule = () => {
         </Stack>
         <Stack alignItems="center" mx="14px">
           <Text fontSize={["2xl", "3xl"]} textAlign="center">
-            2025 Fall Classes
+            2025 Classes
           </Text>
           <Text textAlign="center" fontSize={["md", "lg"]}>
             All class times are 8am-4pm MST.
           </Text>
           <CohortsGrid cohorts={cohorts} />
-          {/* <Text fontSize={["2xl", "3xl"]} textAlign="center" fontStyle="italic" my="20px" p="12px" bg={`${componentColorScheme}.100`} borderRadius="4px">
+          <Text fontSize={["2xl", "3xl"]} textAlign="center" fontStyle="italic" my="20px" p="12px" bg={`${componentColorScheme}.100`} borderRadius="4px">
             2025 Fall Schedule Coming Soon!
-          </Text> */}
+          </Text>
         </Stack>
         <List
           textAlign="center"
