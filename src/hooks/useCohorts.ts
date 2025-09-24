@@ -141,32 +141,32 @@ const cohorts: Cohort[] = [
   //     },
   //   ],
   // },
-  // {
-  //   cohortId: "DR-6",
-  //   label: "September/October Class",
-  //   classDates: [
-  //     {
-  //       month: "September",
-  //       day: "20",
-  //       year: "2025",
-  //     },
-  //     {
-  //       month: "September",
-  //       day: "27",
-  //       year: "2025",
-  //     },
-  //     {
-  //       month: "October",
-  //       day: "4",
-  //       year: "2025",
-  //     },
-  //     {
-  //       month: "October",
-  //       day: "11",
-  //       year: "2025",
-  //     },
-  //   ],
-  // },
+  {
+    cohortId: "DR-6",
+    label: "November Class",
+    classDates: [
+      {
+        month: "November",
+        day: "1",
+        year: "2025",
+      },
+      {
+        month: "November",
+        day: "8",
+        year: "2025",
+      },
+      {
+        month: "November",
+        day: "15",
+        year: "2025",
+      },
+      {
+        month: "November",
+        day: "22",
+        year: "2025",
+      },
+    ],
+  },
 ];
 
 const useCohorts = () => cohorts;
