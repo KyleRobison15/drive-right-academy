@@ -52,7 +52,7 @@ const alaCarte: AlaCarte[] = [
   {
     name: "driving-test",
     label: "Driving Test",
-    price: "$65",
+    price: "$75",
     description: "",
     icon: FaIdCard,
     aria: "Identification Card Icon",
