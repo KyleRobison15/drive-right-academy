@@ -82,7 +82,7 @@ const Home = () => {
         <Feature
           title={"The Right Approach"}
           desc={
-            "Our classroom portion and top-notch road sessions provide an interactive, upbeat approach. We take the time to go beyond the basics to ensure that your teen gains an appreciation for responsible driving."
+            "At our driving school, we're committed to more than just helping you pass the test. We're here to help you become a confident, legal, and responsible driver for life. We take the time to go beyond the basics to ensure that every driver gains an appreciation for responsible driving."
           }
           justifyImage="left"
           imageSrc={RightApproachImg}
@@ -92,7 +92,7 @@ const Home = () => {
         <Feature
           title={"Experienced and Locally Owned"}
           desc={
-            "Drive-Right Academy is locally and family owned and has been teaching teens and adults the skills necessary to become successful and legal drivers for over 22 years! We take pride in serving our community by utilizing our many years of experience to deliver the finest drivers education in Colorado Springs and the surrounding Pikes Peak region."
+            "Drive-Right Academy is locally and family owned and has been teaching teens and adults the skills necessary to become successful and legal drivers for over 22 years! We take pride in serving our community by utilizing our many years of experience to deliver the finest driver's education in Colorado Springs and the surrounding Pikes Peak region."
           }
           justifyImage="right"
           imageSrc={FamilyOwnedImg}
@@ -102,7 +102,7 @@ const Home = () => {
         <Feature
           title={"Online Drivers Education"}
           desc={
-            "Is your schedule too hectic for an in person class? The Colorado Teen On-line Program allows you to get the required 30 hour course completed on your own time."
+            "The Colorado Teen On-line Program allows you to get the required 30 hour course completed on your own time."
           }
           justifyImage="left"
           button_one={signUpButton}
