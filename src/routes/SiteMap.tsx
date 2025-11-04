@@ -36,22 +36,6 @@ const SiteMap = () => {
                 Call Now to Enroll
               </ChakraLink>
             </ListItem>
-            <ListItem>
-              <ChakraLink
-                href="tel:7192009298"
-                color={`${componentColorScheme}.500`}
-              >
-                Sign Up - Online Drivers Education
-              </ChakraLink>
-            </ListItem>
-            <ListItem>
-              <ChakraLink
-                href="tel:7192009298"
-                color={`${componentColorScheme}.500`}
-              >
-                Log In - Online Drivers Education
-              </ChakraLink>
-            </ListItem>
           </List>
         </VStack>
 
@@ -69,7 +53,7 @@ const SiteMap = () => {
                 to="/contact"
                 color={`${componentColorScheme}.500`}
               >
-                Contact Us
+                Call Susan to get on the schedule!
               </ChakraLink>
             </ListItem>
             <ListItem>
@@ -135,14 +119,6 @@ const SiteMap = () => {
             </Heading>
           </ChakraLink>
           <List spacing={2}>
-            <ListItem>
-              <ChakraLink
-                href="https://www.google.com/maps/place/Pikes+Peak+State+College/@38.7642369,-104.7910429,17z/data=!3m1!4b1!4m6!3m5!1s0x871343bcdbb452ed:0xd3518e581b39799a!8m2!3d38.7642369!4d-104.788468!16zL20vMDZ6a3F3?entry=ttu&g_ep=EgoyMDI0MDkwNC4wIKXMDSoASAFQAw%3D%3D"
-                color={`${componentColorScheme}.500`}
-              >
-                Location - Pikes Peak Community College
-              </ChakraLink>
-            </ListItem>
           </List>
         </VStack>
 
