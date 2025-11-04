@@ -6,11 +6,22 @@ import {
   Box,
   Image,
   useColorModeValue,
+  HStack,
+  Icon,
 } from "@chakra-ui/react";
 import { componentColorScheme } from "../theme";
 import MiniCooperImg from "../assets/mini_cooper.png";
 import Fiat500Img from "../assets/fiat_500.png";
 import { yearsInBusiness } from "../utils/dateUtils";
+import {
+  FaChalkboardUser,
+  FaCalendarCheck,
+  FaMoneyBill1,
+} from "react-icons/fa6";
+import { IoCarSportSharp } from "react-icons/io5";
+import { GiSteeringWheel } from "react-icons/gi";
+
+
 
 const About = () => {
   const sectionMargins: string[] = ["5%", "5%", "5%", "12%"];
@@ -25,6 +36,38 @@ const About = () => {
     {
       name: "2013 Fiat 500 (Manual Transmission)",
       img: Fiat500Img,
+    },
+  ];
+
+  const features = [
+    {
+      icon: FaChalkboardUser,
+      title: "Experienced and Patient Instructor",
+      description: `Peter Gates is our certified instructor with over ${yearsInBusiness} years of teaching experience. Peter knows how to adapt to every learner's pace, whether you're nervous behind the wheel or just looking to fine-tune your skills.`,
+    },
+    {
+      icon: FaCalendarCheck,
+      title: "Flexible Scheduling",
+      description:
+        "We offer a wide range of lesson times to fit your busy life, including evenings and weekends! Scheduling is done over the phone with Susan. She will coordinate the best times available.",
+    },
+    {
+      icon: FaMoneyBill1,
+      title: "Affordable Pricing",
+      description:
+        "Quality instruction shouldn't break the bank. Our lesson packages are competitively priced with no hidden fees.",
+    },
+    {
+      icon: IoCarSportSharp,
+      title: "Modern Vehicles",
+      description:
+        "You'll learn in clean, well-maintained cars equipped with the latest safety features.",
+    },
+    {
+      icon: GiSteeringWheel,
+      title: "Real World Training",
+      description:
+        "Our programs focus on both city and highway driving to ensure you gain confidence and practical experience in real world scenarios.",
     },
   ];
 
@@ -84,16 +127,42 @@ const About = () => {
             learned a thing or two about how to teach Driver's Education
             effectively.
           </Text>
-          <Text>
-            At Drive-Right Academy we invest a lot of effort to provide an
-            interactive dialogue between the instructor and students. While
-            confident, legal driving is our number one goal, we also believe
-            driving should be fun. We employ a variety of learning techniques to
-            keep students engaged and interested. We believe this approach is an
-            essential reason why our student's retain the information we teach,
-            and leave our programs with the fundamentals and skills required to
-            drive responsibly in the real world.
-          </Text>
+          <Stack spacing={8} mx={["5%", "12%"]} my="28px">
+            {features.map((feature) => (
+              <Box
+                key={feature.title}
+                p={4}
+                borderWidth="1px"
+                borderRadius="lg"
+                boxShadow="sm"
+                bg="white"
+                _hover={{
+                  boxShadow: "md",
+                  transform: "translateY(-2px)",
+                }}
+                transition="all 0.2s"
+              >
+                <HStack align="center" spacing={3} mb={2}>
+                  <Icon
+                    as={feature.icon}
+                    boxSize={7}
+                    color={`${componentColorScheme}.500`}
+                  />
+                  <Heading
+                    as="h3"
+                    size="md"
+                    color={`${componentColorScheme}.500`}
+                  >
+                    {feature.title}
+                  </Heading>
+                </HStack>
+                <Text fontSize="md" color="gray.700">
+                  {feature.description}
+                </Text>
+              </Box>
+            ))}
+          </Stack>
+
           <Text>
             Drive-Right Academy is your road to successful Driver's Education.
           </Text>
