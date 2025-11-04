@@ -15,6 +15,7 @@ import { PhoneIcon } from "@chakra-ui/icons";
 import OnlineDriversEdImg from "../assets/IMG_5014.jpg";
 import FamilyOwnedImg from "../assets/IMG_4992.jpg";
 import RightApproachImg from "../assets/DSC_9883.jpg"
+import { yearsInBusiness } from "../utils/dateUtils";
 
 const Home = () => {
   const signUpButton: FeatureButton = {
@@ -91,9 +92,7 @@ const Home = () => {
         />
         <Feature
           title={"Experienced and Locally Owned"}
-          desc={
-            "Drive-Right Academy is locally and family owned and has been teaching teens and adults the skills necessary to become successful and legal drivers for over 22 years! We take pride in serving our community by utilizing our many years of experience to deliver the finest driver's education in Colorado Springs and the surrounding Pikes Peak region."
-          }
+          desc={`Drive-Right Academy is locally and family owned and has been teaching teens and adults the skills necessary to become successful and legal drivers for over ${yearsInBusiness} years! We take pride in serving our community by utilizing our many years of experience to deliver the finest driver's education in Colorado Springs and the surrounding Pikes Peak region.`}
           justifyImage="right"
           imageSrc={FamilyOwnedImg}
           ariaLabel="Family Owned Image"
