@@ -10,26 +10,13 @@ import {
   Divider,
 } from "@chakra-ui/react";
 import { componentColorScheme } from "../theme";
-import Feature, { FeatureButton } from "../components/Feature";
+import Feature from "../components/Feature";
 import { PhoneIcon } from "@chakra-ui/icons";
-import OnlineDriversEdImg from "../assets/IMG_5014.jpg";
 import FamilyOwnedImg from "../assets/IMG_4992.jpg";
 import RightApproachImg from "../assets/DSC_9883.jpg"
 import { yearsInBusiness } from "../utils/dateUtils";
 
 const Home = () => {
-  const signUpButton: FeatureButton = {
-    name: "sign-up",
-    label: "Sign Up",
-    url: "https://driverightacademy.bedrivingus.com/affiliate/partner/index/enroll",
-  };
-
-  const logInButton: FeatureButton = {
-    name: "log-in",
-    label: "Log In",
-    url: "https://driverightacademy.bedrivingus.com/affiliate/partner/index/login",
-  };
-
   return (
     <Flex flexDir="column" flexGrow={1}>
       <Stack
@@ -97,18 +84,6 @@ const Home = () => {
           imageSrc={FamilyOwnedImg}
           ariaLabel="Family Owned Image"
           objectFit="cover"
-        />
-        <Feature
-          title={"Online Drivers Education"}
-          desc={
-            "The Colorado Teen On-line Program allows you to get the required 30 hour course completed on your own time."
-          }
-          justifyImage="left"
-          button_one={signUpButton}
-          button_two={logInButton}
-          imageSrc={OnlineDriversEdImg}
-          ariaLabel="Online Drivers Education Image"
-          objectFit=""
         />
       </Stack>
     </Flex>
