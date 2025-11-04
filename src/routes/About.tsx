@@ -3,15 +3,11 @@ import {
   Heading,
   Stack,
   Text,
-  List,
-  ListItem,
-  ListIcon,
   Box,
   Image,
   useColorModeValue,
 } from "@chakra-ui/react";
 import { componentColorScheme } from "../theme";
-import { FaCaretRight } from "react-icons/fa6";
 import MiniCooperImg from "../assets/mini_cooper.png";
 import Fiat500Img from "../assets/fiat_500.png";
 import { yearsInBusiness } from "../utils/dateUtils";
@@ -30,18 +26,6 @@ const About = () => {
       name: "2013 Fiat 500 (Manual Transmission)",
       img: Fiat500Img,
     },
-  ];
-
-  const skillsLabSkills: string[] = [
-    "Slalom Course",
-    "Threshold Braking",
-    "Braking While Turning",
-    "Pull-Push Steering",
-    "Emergency Lane Changes",
-    "Successful Backing",
-    "Parallel parking",
-    "Arm-Lock Steering",
-    "Aim High Vision",
   ];
 
   return (
@@ -113,31 +97,6 @@ const About = () => {
           <Text>
             Drive-Right Academy is your road to successful Driver's Education.
           </Text>
-        </Stack>
-      </Stack>
-      <Stack mx={sectionMargins} mt="24px">
-        <Heading textColor={`${componentColorScheme}.500`}>
-          Skills-Based Driving Lab
-        </Heading>
-        <Stack spacing={5}>
-          <Text>
-            Our Skills-Based Driving Lab is an invaluable learning clinic for
-            your teen to develop the fundamental skills needed before the On-the
-            Road Lessons. Held in a parking lot in a highly controlled
-            environment, instructors work individually with each student on the
-            following exercises:
-          </Text>
-          <List spacing={2} ml="15px">
-            {skillsLabSkills.map((skill) => (
-              <ListItem key={skill}>
-                <ListIcon
-                  as={FaCaretRight}
-                  color={`${componentColorScheme}.500`}
-                />
-                {skill}
-              </ListItem>
-            ))}
-          </List>
         </Stack>
       </Stack>
       <Stack mx={sectionMargins} mt="24px">
