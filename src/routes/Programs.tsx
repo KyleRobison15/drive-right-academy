@@ -28,13 +28,13 @@ const Programs = () => {
             help.
           </Text>
           <Text fontSize={["sm", "md"]}>
-            Don't know where to start?{" "}
+            All of Drive-Right Academy's services are by appointment only.{" "}
             <ChakraLink
               as={ReactRouterLink}
               to="/contact"
               color={`${componentColorScheme}.500`}
             >
-              Contact us
+              Call Susan to get on the schedule!
             </ChakraLink>
           </Text>
         </Stack>
