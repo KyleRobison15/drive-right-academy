@@ -1,6 +1,7 @@
 import { IconType } from "react-icons";
 import { FaIdCard } from "react-icons/fa6";
 import { FaClipboardList } from "react-icons/fa";
+import { TbManualGearbox } from "react-icons/tb";
 
 export interface CardLink {
   label: string;
@@ -55,7 +56,16 @@ const alaCarte: AlaCarte[] = [
     description: "",
     icon: FaIdCard,
     aria: "Identification Card Icon",
-  }
+  },
+  {
+    name: "manual-transmission-training",
+    label: "2-Hour Manual Transmission Training",
+    description:
+      "2-Hour Manual Transmission Training in a Drive-Right Academy Vehicle.",
+    price: "$100/hr",
+    icon: TbManualGearbox,
+    aria: "Manual Gearbox Icon",
+  },
 ];
 
 const programs: Program[] = [

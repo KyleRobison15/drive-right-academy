@@ -11,7 +11,7 @@ interface Props {
 const AlaCarteGrid = ({ alaCarteList, mx }: Props) => {
   return (
     <SimpleGrid
-      columns={{ base: 1, sm: 1, md: 1, lg: 2, xl: 2 }}
+      columns={{ base: 1, sm: 1, md: 1, lg: 2, xl: 3 }}
       padding="12px"
       spacing={8}
       mx={mx}
