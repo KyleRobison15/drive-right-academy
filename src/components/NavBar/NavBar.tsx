@@ -34,14 +34,6 @@ const NavBar = () => {
             Programs
           </Button>
         </Link>
-        <Link to={"/schedule"}>
-          <Button
-            fontSize={navLinkFontSizes}
-            variant={getButtonVariant("/schedule")}
-          >
-            Schedule
-          </Button>
-        </Link>
         <Link to={"/about"}>
           <Button
             fontSize={navLinkFontSizes}
