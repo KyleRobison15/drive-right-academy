@@ -6,11 +6,12 @@ import {
   CardFooter,
   Icon,
   Stack,
-  Badge,
+  Text,
   Flex,
 } from "@chakra-ui/react";
 import { AlaCarte } from "../hooks/usePrograms";
 import EnrollNowButton from "./EnrollNowButton";
+import { componentColorScheme } from "../theme";
 
 interface Props {
   alaCarte: AlaCarte;
@@ -32,23 +33,21 @@ const AlaCarteCard = ({ alaCarte }: Props) => {
       <CardHeader>
         <Flex justifyContent="center">
           {price && (
-            <Badge
-              px="8px"
-              py="3px"
-              mb="8px"
-              colorScheme="green"
-              fontSize="1.5rem"
-              borderRadius="4px"
+            <Text
+              fontSize="3xl"
+              fontWeight="bold"
+              color={`${componentColorScheme}.500`}
+              mb={4}
             >
               {price}
-            </Badge>
+            </Text>
           )}
         </Flex>
       </CardHeader>
       <CardBody mt="10px">
         <Stack alignItems="center" spacing={4}>
-          <Icon as={icon} boxSize="32px" aria-label={aria} />
-          <Heading textAlign="center" size="md">
+          <Icon as={icon} boxSize="42px" aria-label={aria} />
+          <Heading textAlign="center" fontSize="1.3rem">
             {label}
           </Heading>
         </Stack>

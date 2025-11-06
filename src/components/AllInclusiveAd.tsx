@@ -19,7 +19,7 @@ const AllInclusiveAd = () => {
 
   return (
     <Box
-      maxW="500px"
+      maxW="550px"
       mx="auto"
       p="32px"
       borderWidth="1px"
@@ -31,7 +31,7 @@ const AllInclusiveAd = () => {
     >
       <Badge
         colorScheme="green"
-        fontSize="0.9em"
+        fontSize="1rem"
         mb="8px"
         px="10px"
         py="4px"

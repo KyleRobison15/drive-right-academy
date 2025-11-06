@@ -3,7 +3,6 @@ import {
   Heading,
   Text,
   Link as ChakraLink,
-  HStack,
   Stack,
 } from "@chakra-ui/react";
 import { Link as ReactRouterLink } from "react-router-dom";
@@ -38,9 +37,7 @@ const Programs = () => {
             </ChakraLink>
           </Text>
         </Stack>
-        <HStack>
-          <ProgramsGrid programs={programs} mx={sectionMargins} />
-        </HStack>
+        <ProgramsGrid programs={programs} mx={sectionMargins} />
         <Stack alignItems="center" mb="32px" mt="50px" spacing={4}>
           <Heading size={["xl", "2xl"]}>A La Carte</Heading>
           <Text fontSize={["lg", "2xl"]} textAlign="center">

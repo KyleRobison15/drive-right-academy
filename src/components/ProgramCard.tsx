@@ -7,7 +7,6 @@ import {
   Button,
   Heading,
   Box,
-  Badge,
   List,
   ListItem,
   ListIcon,
@@ -81,16 +80,14 @@ const ProgramCard = ({ program }: Props) => {
     >
       <CardHeader pb={0}>
         {program.price && (
-          <Badge
-            px="8px"
-            py="3px"
-            mb="8px"
-            colorScheme="green"
-            fontSize="1.3rem"
-            borderRadius="4px"
+          <Text
+            fontSize="3xl"
+            fontWeight="bold"
+            color={`${componentColorScheme}.500`}
+            mb={4}
           >
             {program.price}
-          </Badge>
+          </Text>
         )}
         <Heading size={["md", "lg"]}>{program.label}</Heading>
       </CardHeader>
