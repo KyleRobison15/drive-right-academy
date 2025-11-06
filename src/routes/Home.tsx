@@ -13,19 +13,22 @@ import { componentColorScheme } from "../theme";
 import Feature from "../components/Feature";
 import { PhoneIcon } from "@chakra-ui/icons";
 import FamilyOwnedImg from "../assets/IMG_4992.jpg";
-import RightApproachImg from "../assets/DSC_9883.jpg"
+import RightApproachImg from "../assets/DSC_9883.jpg";
 import { yearsInBusiness } from "../utils/dateUtils";
+import AllInclusiveAd from "../components/AllInclusiveAd";
 
 const Home = () => {
   return (
     <Flex flexDir="column" flexGrow={1}>
       <Stack
-        direction={["column", "column", "row", "row"]}
+        direction={"column"}
         minH="400px"
-        p="24px"
         justify="space-evenly"
         align="center"
         textAlign={["center", "center", "left", "left"]}
+        spacing={16}
+        mx="24px"
+        my="50px"
       >
         <Box maxW="40rem">
           <Text
@@ -61,6 +64,7 @@ const Home = () => {
             </Button>
           </ChakraLink>
         </Box>
+        <AllInclusiveAd />
       </Stack>
       <Divider my="24px" />
       <Heading size="lg" textAlign="center" my="12px">
