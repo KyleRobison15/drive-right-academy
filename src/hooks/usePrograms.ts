@@ -59,9 +59,9 @@ const alaCarte: AlaCarte[] = [
   },
   {
     name: "manual-transmission-training",
-    label: "2-Hour Manual Transmission Training",
+    label: "Manual Transmission Training",
     description:
-      "2-Hour Manual Transmission Training in a Drive-Right Academy Vehicle.",
+      "Manual Transmission Training in a Drive-Right Academy Vehicle.",
     price: "$100/hr",
     icon: TbManualGearbox,
     aria: "Manual Gearbox Icon",
