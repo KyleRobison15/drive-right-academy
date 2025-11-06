@@ -26,7 +26,6 @@ const AlaCarteCard = ({ alaCarte }: Props) => {
       variant="outline"
       p="24px"
       h="390px"
-      minW="300px"
       bg="gray.50"
       borderRadius="2xl"
     >
@@ -44,10 +43,10 @@ const AlaCarteCard = ({ alaCarte }: Props) => {
           )}
         </Flex>
       </CardHeader>
-      <CardBody mt="10px">
+      <CardBody maxH="150px">
         <Stack alignItems="center" spacing={4}>
           <Icon as={icon} boxSize="42px" aria-label={aria} />
-          <Heading textAlign="center" fontSize="1.3rem">
+          <Heading textAlign="center" fontSize="1.2rem">
             {label}
           </Heading>
         </Stack>
