@@ -126,6 +126,7 @@ const ContactForm = () => {
           colorScheme={componentColorScheme}
           mt={4}
           rightIcon={<RiMailSendLine fontSize="18px" />}
+          borderRadius="full"
         >
           Submit
         </Button>

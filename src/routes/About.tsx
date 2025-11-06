@@ -92,12 +92,13 @@ const About = () => {
             <Box
               key={vehicle.name}
               borderWidth="1px"
-              borderRadius="lg"
+              borderRadius="2xl"
               overflow="hidden"
               bg={vehicleCardBg}
               boxShadow="sm"
               maxW="400px"
               minW="400px"
+              p="12px"
             >
               <Image
                 src={vehicle.img}
