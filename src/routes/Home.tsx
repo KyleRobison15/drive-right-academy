@@ -1,17 +1,14 @@
 import {
   Box,
-  Button,
   Flex,
   Stack,
   Heading,
   Highlight,
-  Link as ChakraLink,
   Text,
   Divider,
 } from "@chakra-ui/react";
 import { componentColorScheme } from "../theme";
 import Feature from "../components/Feature";
-import { PhoneIcon } from "@chakra-ui/icons";
 import FamilyOwnedImg from "../assets/IMG_4992.jpg";
 import RightApproachImg from "../assets/DSC_9883.jpg";
 import { yearsInBusiness } from "../utils/dateUtils";
@@ -26,7 +23,7 @@ const Home = () => {
         justify="space-evenly"
         align="center"
         textAlign={["center", "center", "left", "left"]}
-        spacing={16}
+        spacing={14}
         mx="24px"
         my="50px"
       >
@@ -53,17 +50,6 @@ const Home = () => {
             Start your journey to becoming a confident, legal and responsible
             driver today.
           </Text>
-          <ChakraLink href="tel:7192009298">
-            <Button
-              size="lg"
-              colorScheme={componentColorScheme}
-              mt="24px"
-              rightIcon={<PhoneIcon boxSize="14px" ml="4px" />}
-              borderRadius="full"
-            >
-              Call Now to Enroll
-            </Button>
-          </ChakraLink>
         </Box>
         <AllInclusiveAd />
       </Stack>
