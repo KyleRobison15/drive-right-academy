@@ -33,7 +33,7 @@ const Programs = () => {
               to="/contact"
               color={`${componentColorScheme}.500`}
             >
-              Call Susan to get on the schedule!
+              Call us to get on the schedule!
             </ChakraLink>
           </Text>
         </Stack>
