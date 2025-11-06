@@ -22,7 +22,11 @@ const NavBar = () => {
       </HStack>
       <HStack justify="space-evenly" flex="1">
         <Link to={"/"}>
-          <Button fontSize={navLinkFontSizes} variant={getButtonVariant("/")}>
+          <Button
+            fontSize={navLinkFontSizes}
+            variant={getButtonVariant("/")}
+            borderRadius="full"
+          >
             Home
           </Button>
         </Link>
@@ -30,6 +34,7 @@ const NavBar = () => {
           <Button
             fontSize={navLinkFontSizes}
             variant={getButtonVariant("/programs")}
+            borderRadius="full"
           >
             Programs
           </Button>
@@ -38,6 +43,7 @@ const NavBar = () => {
           <Button
             fontSize={navLinkFontSizes}
             variant={getButtonVariant("/about")}
+            borderRadius="full"
           >
             About
           </Button>
@@ -46,6 +52,7 @@ const NavBar = () => {
           <Button
             fontSize={navLinkFontSizes}
             variant={getButtonVariant("/contact")}
+            borderRadius="full"
           >
             Contact
           </Button>

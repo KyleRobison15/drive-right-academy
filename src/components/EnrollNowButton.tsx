@@ -16,6 +16,7 @@ const EnrollNowButton = () => {
         variant="solid"
         colorScheme={componentColorScheme}
         rightIcon={<PhoneIcon boxSize="14px" ml="4px" />}
+        borderRadius="full"
       >
         Enroll Now
       </Button>

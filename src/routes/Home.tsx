@@ -59,6 +59,7 @@ const Home = () => {
               colorScheme={componentColorScheme}
               mt="24px"
               rightIcon={<PhoneIcon boxSize="14px" ml="4px" />}
+              borderRadius="full"
             >
               Call Now to Enroll
             </Button>
