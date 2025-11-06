@@ -82,6 +82,7 @@ const Feature = ({
         src={imageSrc}
         aria-label={ariaLabel}
         objectFit={objectFit === "cover" ? "cover" : "inherit"}
+        borderRadius="2xl"
       ></Image>
     </Stack>
   );

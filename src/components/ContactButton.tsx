@@ -12,6 +12,7 @@ const ContactButton = () => {
         size={["sm", "sm", "sm", "md"]}
         variant="solid"
         p="12px"
+        borderRadius="full"
       >
         (719) 200-9298
       </Button>

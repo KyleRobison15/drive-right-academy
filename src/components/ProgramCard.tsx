@@ -42,6 +42,7 @@ const ProgramCard = ({ program }: Props) => {
             variant="solid"
             colorScheme={componentColorScheme}
             rightIcon={<ChevronRightIcon boxSize="20px" />}
+            borderRadius="full"
           >
             {link.label}
           </Button>
@@ -71,7 +72,13 @@ const ProgramCard = ({ program }: Props) => {
   };
 
   return (
-    <Card boxShadow="lg" variant="outline" p="24px" bg="gray.50">
+    <Card
+      boxShadow="lg"
+      variant="outline"
+      p="24px"
+      bg="gray.50"
+      borderRadius="2xl"
+    >
       <CardHeader pb={0}>
         {program.price && (
           <Badge
@@ -103,7 +110,9 @@ const ProgramCard = ({ program }: Props) => {
           {program.description}
         </Text>
         <Box mt="24px">{renderProgramAccordionItems()}</Box>
-        <Text mt="12px" fontStyle="italic">{program.footerText}</Text>
+        <Text mt="12px" fontStyle="italic">
+          {program.footerText}
+        </Text>
       </CardBody>
       <CardFooter
         justify="space-between"
