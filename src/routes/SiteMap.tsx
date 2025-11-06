@@ -84,32 +84,6 @@ const SiteMap = () => {
         </VStack>
 
         {/* Section 3 */}
-        <VStack align="start" spacing={4}>
-          <ChakraLink as={ReactRouterLink} to="/schedule">
-            <Heading as="h2" size="md">
-              Schedule
-            </Heading>
-          </ChakraLink>
-          <List spacing={2}>
-            <ListItem>
-              <ChakraLink
-                as={ReactRouterLink}
-                to="/contact"
-                color={`${componentColorScheme}.500`}
-              >
-                Contact Us
-              </ChakraLink>
-            </ListItem>
-            <ListItem>
-              <ChakraLink
-                href="tel:7192009298"
-                color={`${componentColorScheme}.500`}
-              >
-                Enroll Now
-              </ChakraLink>
-            </ListItem>
-          </List>
-        </VStack>
 
         {/* Section 4 */}
         <VStack align="start" spacing={4}>

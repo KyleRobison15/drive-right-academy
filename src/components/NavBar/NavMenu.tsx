@@ -3,7 +3,6 @@ import { IoIosCall } from "react-icons/io";
 import {
   IoHomeOutline,
   IoReaderOutline,
-  IoCalendarOutline,
   IoPeopleOutline,
 } from "react-icons/io5";
 import {
@@ -40,11 +39,6 @@ const NavMenu = () => {
         <Link to="/programs">
           <MenuItem icon={<IoReaderOutline fontSize="18px" />} fontSize="md">
             Programs
-          </MenuItem>
-        </Link>
-        <Link to="/schedule">
-          <MenuItem icon={<IoCalendarOutline fontSize="18px" />} fontSize="md">
-            Schedule
           </MenuItem>
         </Link>
         <Link to="/about">
