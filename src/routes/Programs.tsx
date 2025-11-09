@@ -26,7 +26,7 @@ const Programs = () => {
             Wherever you are in your Driver's Education journey, we're here to
             help.
           </Text>
-          <Text fontSize={["sm", "md"]}>
+          <Text fontSize={["sm", "md"]} textAlign="center">
             All of Drive-Right Academy's services are by appointment only.{" "}
             <ChakraLink
               as={ReactRouterLink}
