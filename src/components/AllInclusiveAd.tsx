@@ -43,8 +43,8 @@ const AllInclusiveAd = () => {
         All Inclusive Package
       </Heading>
       <Text fontSize="md" color="gray.600" mb={4}>
-        Our most popular package, designed to cover all your Driver's Education requirements in one
-        place.
+        Our most popular package, designed to cover all your Driver's Education
+        requirements in one place.
       </Text>
 
       <Text
@@ -54,6 +54,14 @@ const AllInclusiveAd = () => {
         mb={4}
       >
         $485
+        <Text
+          as="span"
+          fontSize="lg"
+          color={`${componentColorScheme}.500`}
+          verticalAlign="super"
+        >
+          *
+        </Text>
       </Text>
 
       <Divider my="16px" />
@@ -91,8 +99,16 @@ const AllInclusiveAd = () => {
           Driving Test
         </ListItem>
       </List>
-
       <EnrollNowButton />
+      <Text
+        fontSize="xs"
+        color="gray.500"
+        mt={4}
+        fontStyle="italic"
+        fontWeight="bold"
+      >
+        *Full payment due at time of enrollment
+      </Text>
     </Box>
   );
 };
